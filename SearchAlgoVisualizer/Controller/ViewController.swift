@@ -18,6 +18,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var ResetButton: UIButton!
     @IBOutlet weak var RunButton: UIButton!
     @IBOutlet weak var AlgoPicker: UITextField!
+    @IBOutlet weak var instructionLabel: UILabel!
+    
     var pickerView = UIPickerView()
     
     override func viewDidLoad() {
@@ -27,8 +29,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         pickerView.delegate = self
         pickerView.dataSource = self
         AlgoPicker.textAlignment = .center
-//        ResetButton.layer.cornerRadius = ResetButton.frame.size.height/3
-//        RunButton.layer.cornerRadius = ResetButton.frame.size.height/3
+
+        
         
     }
     

@@ -1761,6 +1761,7 @@
                         <outlet property="AlgoPicker" destination="OQ9-B3-ZLV" id="L40-xc-9wQ"/>
                         <outlet property="ResetButton" destination="Gb0-Bx-M6g" id="90D-dk-one"/>
                         <outlet property="RunButton" destination="25X-t1-AgP" id="n37-By-OkQ"/>
+                        <outlet property="instructionLabel" destination="GIL-Wy-ONp" id="wxt-iP-Oo6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
