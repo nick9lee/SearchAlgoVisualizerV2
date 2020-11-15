@@ -11,8 +11,9 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     static let numberOfCols = 11
-    static let numberOfRows = 17
+    static let numberOfRows = 16
     static let searchAlgos = ["Dijkstra", "BFS", "DFS", "A*"]
+    static var chosenSearchAlgo = searchAlgos[0]
 
     @IBOutlet weak var ResetButton: UIButton!
     @IBOutlet weak var RunButton: UIButton!
@@ -26,10 +27,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         pickerView.delegate = self
         pickerView.dataSource = self
         AlgoPicker.textAlignment = .center
-        ResetButton.layer.cornerRadius = ResetButton.frame.size.height/3
-        RunButton.layer.cornerRadius = ResetButton.frame.size.height/3
+//        ResetButton.layer.cornerRadius = ResetButton.frame.size.height/3
+//        RunButton.layer.cornerRadius = ResetButton.frame.size.height/3
         
-        
+    }
+    
+    //portrait mode only
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       get {
+          return .portrait
+       }
     }
     
     //pickerView Functions
@@ -48,6 +55,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         AlgoPicker.text = ViewController.searchAlgos[row]
+        ViewController.chosenSearchAlgo = AlgoPicker.text!  //text always in picker view so safe to unwrap
         AlgoPicker.resignFirstResponder()
     }
 
