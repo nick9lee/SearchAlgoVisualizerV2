@@ -42,6 +42,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed00:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chx-4J-SFm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7K-mb-F5F">
                                                 <rect key="frame" x="36.5" y="0.0" width="34.5" height="37"/>
@@ -1716,6 +1719,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C25-YH-wzw"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dijkstra" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OQ9-B3-ZLV">
                                                 <rect key="frame" x="135" y="0.0" width="130" height="37"/>
@@ -1736,6 +1742,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="runPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4H9-d1-lkp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1759,6 +1768,7 @@
                     </view>
                     <connections>
                         <outlet property="AlgoPicker" destination="OQ9-B3-ZLV" id="L40-xc-9wQ"/>
+                        <outlet property="Button00" destination="n7C-vb-bcP" id="Qgx-9E-SUO"/>
                         <outlet property="ResetButton" destination="Gb0-Bx-M6g" id="90D-dk-one"/>
                         <outlet property="RunButton" destination="25X-t1-AgP" id="n37-By-OkQ"/>
                         <outlet property="instructionLabel" destination="GIL-Wy-ONp" id="wxt-iP-Oo6"/>

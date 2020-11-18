@@ -15,10 +15,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     static let searchAlgos = ["Dijkstra", "BFS", "DFS", "A*"]
     static var chosenSearchAlgo = searchAlgos[0]
 
+    //other user interface elements-------------
     @IBOutlet weak var ResetButton: UIButton!
     @IBOutlet weak var RunButton: UIButton!
     @IBOutlet weak var AlgoPicker: UITextField!
     @IBOutlet weak var instructionLabel: UILabel!
+    
+    //cell buttons------------------------------
+    //row 1
+    @IBOutlet weak var Button00: UIButton!
+    
     
     var pickerView = UIPickerView()
     
@@ -30,9 +36,42 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         pickerView.dataSource = self
         AlgoPicker.textAlignment = .center
 
-        
+    }
+    
+    func buttonInit(){
         
     }
+    
+    //action buttons
+    @IBAction func resetPressed(_ sender: Any) {
+    }
+    @IBAction func runPressed(_ sender: Any) {
+    }
+    
+    //cell Button actions
+    @IBAction func pressed00(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     //portrait mode only
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
