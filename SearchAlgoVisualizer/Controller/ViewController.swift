@@ -14,6 +14,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     static let numberOfRows = 16
     static let searchAlgos = ["Dijkstra", "BFS", "DFS", "A*"]
     static var chosenSearchAlgo = searchAlgos[0]
+    
+    var startfound = false
+    var endfound = false
+    
+    var state00 = ButtonState()
+    var state01 = ButtonState()
 
     //other user interface elements-------------
     @IBOutlet weak var ResetButton: UIButton!
@@ -25,6 +31,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //row 1
     @IBOutlet weak var Button00: UIButton!
     
+    @IBOutlet weak var Button01: UIButton!
     
     var pickerView = UIPickerView()
     
@@ -44,14 +51,48 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //action buttons
     @IBAction func resetPressed(_ sender: Any) {
+        startfound = false
+        endfound = false
+        
+        //reseting states of all buttons
+        state00.resetState()
+        
+        //reseting all cell colors
+        Button00.backgroundColor = UIColor(named: "defaultTileColor")
     }
     @IBAction func runPressed(_ sender: Any) {
+        if(startfound == false){
+            instructionLabel.text = "Select Start First"
+        } else if(endfound == false){
+            instructionLabel.text = "Select End First"
+        } else{
+            instructionLabel.text = ""
+        }
     }
     
     //cell Button actions
     @IBAction func pressed00(_ sender: Any) {
+        if(startfound == false || state00.isStart){
+            Button00.backgroundColor = UIColor(named: "start")
+            state00.makeStart()
+            startfound = true;
+            instructionLabel.text = "Select End"
+        } else if(endfound == false || state00.isEnd){
+            Button00.backgroundColor = UIColor(named: "finish")
+            state00.makeEnd()
+            endfound = true;
+        } else if(state00.isPath == true){
+            Button00.backgroundColor = UIColor(named: "barrier")
+            state00.makeBarrier()
+        } else if(state00.isBarrier == true){
+            Button00.backgroundColor = UIColor(named: "defaultTileColor")
+            state00.makePath()
+        }
     }
     
+    @IBAction func pressed01(_ sender: Any) {
+        Button01.backgroundColor = UIColor(named: "barrier")
+    }
     
     
     

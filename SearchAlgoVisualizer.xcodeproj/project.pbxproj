@@ -14,6 +14,8 @@
 		7ABDDD47253564A500E7ED78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABDDD45253564A500E7ED78 /* Main.storyboard */; };
 		7ABDDD49253564A900E7ED78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABDDD48253564A900E7ED78 /* Assets.xcassets */; };
 		7ABDDD4C253564A900E7ED78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABDDD4A253564A900E7ED78 /* LaunchScreen.storyboard */; };
+		7AD2B71C269E569200FFB496 /* searchAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD2B71B269E569200FFB496 /* searchAlgos.swift */; };
+		7AD2B71E26ADE1FA00FFB496 /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD2B71D26ADE1FA00FFB496 /* ButtonState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7ABDDD48253564A900E7ED78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ABDDD4B253564A900E7ED78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ABDDD4D253564A900E7ED78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD2B71B269E569200FFB496 /* searchAlgos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchAlgos.swift; sourceTree = "<group>"; };
+		7AD2B71D26ADE1FA00FFB496 /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				7A58C6E52560EECE004ECE69 /* Cells.swift */,
+				7AD2B71B269E569200FFB496 /* searchAlgos.swift */,
+				7AD2B71D26ADE1FA00FFB496 /* ButtonState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,7 +173,9 @@
 				7ABDDD44253564A500E7ED78 /* ViewController.swift in Sources */,
 				7A58C6E62560EECE004ECE69 /* Cells.swift in Sources */,
 				7ABDDD40253564A500E7ED78 /* AppDelegate.swift in Sources */,
+				7AD2B71E26ADE1FA00FFB496 /* ButtonState.swift in Sources */,
 				7ABDDD42253564A500E7ED78 /* SceneDelegate.swift in Sources */,
+				7AD2B71C269E569200FFB496 /* searchAlgos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
