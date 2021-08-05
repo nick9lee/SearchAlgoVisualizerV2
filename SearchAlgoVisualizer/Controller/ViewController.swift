@@ -59,6 +59,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var state29 = ButtonState()
     var state210 = ButtonState()
     
+    //row3
+    var state30 = ButtonState()
+    var state31 = ButtonState()
+    var state32 = ButtonState()
+    var state33 = ButtonState()
+    var state34 = ButtonState()
+    var state35 = ButtonState()
+    var state36 = ButtonState()
+    var state37 = ButtonState()
+    var state38 = ButtonState()
+    var state39 = ButtonState()
+    var state310 = ButtonState()
+    
     //button states end ------------------------------------------
 
     //other user interface elements-------------
@@ -68,7 +81,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var instructionLabel: UILabel!
     
     //cell buttons start------------------------------
-    //row1
+    //row0
     @IBOutlet weak var Button00: UIButton!
     @IBOutlet weak var Button01: UIButton!
     @IBOutlet weak var Button02: UIButton!
@@ -81,7 +94,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var Button09: UIButton!
     @IBOutlet weak var Button010: UIButton!
     
-    //row2
+    //row1
     @IBOutlet weak var Button10: UIButton!
     @IBOutlet weak var Button11: UIButton!
     @IBOutlet weak var Button12: UIButton!
@@ -94,8 +107,33 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var Button19: UIButton!
     @IBOutlet weak var Button110: UIButton!
     
+    //row2
+    @IBOutlet weak var Button20: UIButton!
+    @IBOutlet weak var Button21: UIButton!
+    @IBOutlet weak var Button22: UIButton!
+    @IBOutlet weak var Button23: UIButton!
+    @IBOutlet weak var Button24: UIButton!
+    @IBOutlet weak var Button25: UIButton!
+    @IBOutlet weak var Button26: UIButton!
+    @IBOutlet weak var Button27: UIButton!
+    @IBOutlet weak var Button28: UIButton!
+    @IBOutlet weak var Button29: UIButton!
+    @IBOutlet weak var Button210: UIButton!
     
     //row3
+    @IBOutlet weak var Button30: UIButton!
+    @IBOutlet weak var Button31: UIButton!
+    @IBOutlet weak var Button32: UIButton!
+    @IBOutlet weak var Button33: UIButton!
+    @IBOutlet weak var Button34: UIButton!
+    @IBOutlet weak var Button35: UIButton!
+    @IBOutlet weak var Button36: UIButton!
+    @IBOutlet weak var Button37: UIButton!
+    @IBOutlet weak var Button38: UIButton!
+    @IBOutlet weak var Button39: UIButton!
+    @IBOutlet weak var Button310: UIButton!
+    
+    
     //cell buttons end------------------------------
     
     var pickerView = UIPickerView()
@@ -119,17 +157,112 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         startfound = false
         endfound = false
         
-        //reseting states of all buttons
+        //reseting states of all buttons ------------
+        //row0
         state00.resetState()
         state01.resetState()
         state02.resetState()
         state03.resetState()
+        state04.resetState()
+        state05.resetState()
+        state06.resetState()
+        state07.resetState()
+        state08.resetState()
+        state09.resetState()
+        state010.resetState()
         
-        //reseting all cell colors
+        //row1
+        state10.resetState()
+        state11.resetState()
+        state12.resetState()
+        state13.resetState()
+        state14.resetState()
+        state15.resetState()
+        state16.resetState()
+        state17.resetState()
+        state18.resetState()
+        state19.resetState()
+        state110.resetState()
+        
+        //row2
+        state20.resetState()
+        state21.resetState()
+        state22.resetState()
+        state23.resetState()
+        state24.resetState()
+        state25.resetState()
+        state26.resetState()
+        state27.resetState()
+        state28.resetState()
+        state29.resetState()
+        state210.resetState()
+        
+        //row3
+        state30.resetState()
+        state31.resetState()
+        state32.resetState()
+        state33.resetState()
+        state34.resetState()
+        state35.resetState()
+        state36.resetState()
+        state37.resetState()
+        state38.resetState()
+        state39.resetState()
+        state310.resetState()
+        
+        //reseting all cell colors ----------------
+        //row0
         Button00.backgroundColor = UIColor(named: "defaultTileColor")
         Button01.backgroundColor = UIColor(named: "defaultTileColor")
         Button02.backgroundColor = UIColor(named: "defaultTileColor")
         Button03.backgroundColor = UIColor(named: "defaultTileColor")
+        Button04.backgroundColor = UIColor(named: "defaultTileColor")
+        Button05.backgroundColor = UIColor(named: "defaultTileColor")
+        Button06.backgroundColor = UIColor(named: "defaultTileColor")
+        Button07.backgroundColor = UIColor(named: "defaultTileColor")
+        Button08.backgroundColor = UIColor(named: "defaultTileColor")
+        Button09.backgroundColor = UIColor(named: "defaultTileColor")
+        Button010.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row1
+        Button10.backgroundColor = UIColor(named: "defaultTileColor")
+        Button11.backgroundColor = UIColor(named: "defaultTileColor")
+        Button12.backgroundColor = UIColor(named: "defaultTileColor")
+        Button13.backgroundColor = UIColor(named: "defaultTileColor")
+        Button14.backgroundColor = UIColor(named: "defaultTileColor")
+        Button15.backgroundColor = UIColor(named: "defaultTileColor")
+        Button16.backgroundColor = UIColor(named: "defaultTileColor")
+        Button17.backgroundColor = UIColor(named: "defaultTileColor")
+        Button18.backgroundColor = UIColor(named: "defaultTileColor")
+        Button19.backgroundColor = UIColor(named: "defaultTileColor")
+        Button110.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row2
+        Button20.backgroundColor = UIColor(named: "defaultTileColor")
+        Button21.backgroundColor = UIColor(named: "defaultTileColor")
+        Button22.backgroundColor = UIColor(named: "defaultTileColor")
+        Button23.backgroundColor = UIColor(named: "defaultTileColor")
+        Button24.backgroundColor = UIColor(named: "defaultTileColor")
+        Button25.backgroundColor = UIColor(named: "defaultTileColor")
+        Button26.backgroundColor = UIColor(named: "defaultTileColor")
+        Button27.backgroundColor = UIColor(named: "defaultTileColor")
+        Button28.backgroundColor = UIColor(named: "defaultTileColor")
+        Button29.backgroundColor = UIColor(named: "defaultTileColor")
+        Button210.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row3
+        Button30.backgroundColor = UIColor(named: "defaultTileColor")
+        Button31.backgroundColor = UIColor(named: "defaultTileColor")
+        Button32.backgroundColor = UIColor(named: "defaultTileColor")
+        Button33.backgroundColor = UIColor(named: "defaultTileColor")
+        Button34.backgroundColor = UIColor(named: "defaultTileColor")
+        Button35.backgroundColor = UIColor(named: "defaultTileColor")
+        Button36.backgroundColor = UIColor(named: "defaultTileColor")
+        Button37.backgroundColor = UIColor(named: "defaultTileColor")
+        Button38.backgroundColor = UIColor(named: "defaultTileColor")
+        Button39.backgroundColor = UIColor(named: "defaultTileColor")
+        Button310.backgroundColor = UIColor(named: "defaultTileColor")
+        
     }
     @IBAction func runPressed(_ sender: Any) {
         if(startfound == false){

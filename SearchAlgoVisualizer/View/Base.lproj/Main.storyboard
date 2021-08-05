@@ -1799,6 +1799,28 @@
                         <outlet property="Button17" destination="Sl4-MY-KKV" id="vYc-qa-5eM"/>
                         <outlet property="Button18" destination="daF-NH-jF8" id="sWO-JI-oLJ"/>
                         <outlet property="Button19" destination="m18-on-LOq" id="5P8-zC-HI2"/>
+                        <outlet property="Button20" destination="Dfj-ER-z33" id="eLa-fZ-bDt"/>
+                        <outlet property="Button21" destination="v4i-XD-r6r" id="Enp-VB-95x"/>
+                        <outlet property="Button210" destination="lxY-Hr-7GC" id="n6i-ky-GOh"/>
+                        <outlet property="Button22" destination="D8q-tq-1CC" id="I4O-a6-Bt6"/>
+                        <outlet property="Button23" destination="r9Y-m6-3fV" id="Db9-9Q-WCp"/>
+                        <outlet property="Button24" destination="0zN-xg-lk7" id="WuW-ue-0JG"/>
+                        <outlet property="Button25" destination="jRZ-jt-0Ku" id="hh8-aT-0j0"/>
+                        <outlet property="Button26" destination="UQP-d4-Fbh" id="aKX-Y7-bk0"/>
+                        <outlet property="Button27" destination="rdS-87-Ibc" id="9uQ-6K-b07"/>
+                        <outlet property="Button28" destination="mE8-O5-rH1" id="AKW-HR-Ri0"/>
+                        <outlet property="Button29" destination="bIZ-hf-97J" id="ldm-bv-r6Z"/>
+                        <outlet property="Button30" destination="T7a-rf-eaI" id="Xgw-eg-DrQ"/>
+                        <outlet property="Button31" destination="nbS-1n-jLn" id="qPX-bg-oEj"/>
+                        <outlet property="Button310" destination="Moh-LS-z4o" id="qph-CV-gAH"/>
+                        <outlet property="Button32" destination="YbI-4c-jc4" id="lUK-Gu-w4h"/>
+                        <outlet property="Button33" destination="nFU-fg-kl6" id="6jP-AK-ftw"/>
+                        <outlet property="Button34" destination="TUF-aL-Jec" id="piz-l1-8R9"/>
+                        <outlet property="Button35" destination="Ikk-hw-scX" id="M48-K7-siX"/>
+                        <outlet property="Button36" destination="4cd-3Q-sUq" id="meV-tc-NPR"/>
+                        <outlet property="Button37" destination="AVD-Co-PE2" id="3yW-i3-8Nr"/>
+                        <outlet property="Button38" destination="rtl-YN-h4V" id="kFb-av-Gai"/>
+                        <outlet property="Button39" destination="jLL-qx-RqF" id="HbZ-aS-mie"/>
                         <outlet property="ResetButton" destination="Gb0-Bx-M6g" id="90D-dk-one"/>
                         <outlet property="RunButton" destination="25X-t1-AgP" id="n37-By-OkQ"/>
                         <outlet property="instructionLabel" destination="GIL-Wy-ONp" id="wxt-iP-Oo6"/>
