@@ -72,6 +72,97 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var state39 = ButtonState()
     var state310 = ButtonState()
     
+    //row4
+    var state40 = ButtonState()
+    var state41 = ButtonState()
+    var state42 = ButtonState()
+    var state43 = ButtonState()
+    var state44 = ButtonState()
+    var state45 = ButtonState()
+    var state46 = ButtonState()
+    var state47 = ButtonState()
+    var state48 = ButtonState()
+    var state49 = ButtonState()
+    var state410 = ButtonState()
+    
+    //row5
+    var state50 = ButtonState()
+    var state51 = ButtonState()
+    var state52 = ButtonState()
+    var state53 = ButtonState()
+    var state54 = ButtonState()
+    var state55 = ButtonState()
+    var state56 = ButtonState()
+    var state57 = ButtonState()
+    var state58 = ButtonState()
+    var state59 = ButtonState()
+    var state510 = ButtonState()
+    
+    //row6
+    var state60 = ButtonState()
+    var state61 = ButtonState()
+    var state62 = ButtonState()
+    var state63 = ButtonState()
+    var state64 = ButtonState()
+    var state65 = ButtonState()
+    var state66 = ButtonState()
+    var state67 = ButtonState()
+    var state68 = ButtonState()
+    var state69 = ButtonState()
+    var state610 = ButtonState()
+    
+    //row7
+    var state70 = ButtonState()
+    var state71 = ButtonState()
+    var state72 = ButtonState()
+    var state73 = ButtonState()
+    var state74 = ButtonState()
+    var state75 = ButtonState()
+    var state76 = ButtonState()
+    var state77 = ButtonState()
+    var state78 = ButtonState()
+    var state79 = ButtonState()
+    var state710 = ButtonState()
+    
+    //row8
+    var state80 = ButtonState()
+    var state81 = ButtonState()
+    var state82 = ButtonState()
+    var state83 = ButtonState()
+    var state84 = ButtonState()
+    var state85 = ButtonState()
+    var state86 = ButtonState()
+    var state87 = ButtonState()
+    var state88 = ButtonState()
+    var state89 = ButtonState()
+    var state810 = ButtonState()
+    
+    //row9
+    var state90 = ButtonState()
+    var state91 = ButtonState()
+    var state92 = ButtonState()
+    var state93 = ButtonState()
+    var state94 = ButtonState()
+    var state95 = ButtonState()
+    var state96 = ButtonState()
+    var state97 = ButtonState()
+    var state98 = ButtonState()
+    var state99 = ButtonState()
+    var state910 = ButtonState()
+    
+    //row10
+    var state100 = ButtonState()
+    var state101 = ButtonState()
+    var state102 = ButtonState()
+    var state103 = ButtonState()
+    var state104 = ButtonState()
+    var state105 = ButtonState()
+    var state106 = ButtonState()
+    var state107 = ButtonState()
+    var state108 = ButtonState()
+    var state109 = ButtonState()
+    var state1010 = ButtonState()
+    
     //button states end ------------------------------------------
 
     //other user interface elements-------------
@@ -274,6 +365,122 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
     }
     
+    func cellButtonAction(row: Int, col: Int){
+        var state: ButtonState
+        var button: UIButton
+        
+        switch(row, col){
+        case(0,0):                  //row 0 --------
+            state = state00
+            button = Button00
+            break
+        case(0,1):
+            state = state01
+            button = Button01
+            break
+        case(0,2):
+            state = state02
+            button = Button02
+            break
+        case(0,3):
+            state = state03
+            button = Button03
+            break
+        case(0,4):
+            state = state04
+            button = Button04
+            break
+        case(0,5):
+            state = state05
+            button = Button05
+            break
+        case(0,6):
+            state = state06
+            button = Button06
+            break
+        case(0,7):
+            state = state07
+            button = Button07
+            break
+        case(0,8):
+            state = state08
+            button = Button08
+            break
+        case(0,9):
+            state = state09
+            button = Button09
+            break
+        case(0,10):
+            state = state010
+            button = Button010
+            break
+        case(1,0):                  //row 1 --------
+            state = state10
+            button = Button10
+            break
+        case(1,1):
+            state = state11
+            button = Button11
+            break
+        case(1,2):
+            state = state12
+            button = Button12
+            break
+        case(1,3):
+            state = state13
+            button = Button13
+            break
+        case(1,4):
+            state = state14
+            button = Button14
+            break
+        case(1,5):
+            state = state15
+            button = Button15
+            break
+        case(1,6):
+            state = state16
+            button = Button16
+            break
+        case(1,7):
+            state = state17
+            button = Button17
+            break
+        case(1,8):
+            state = state18
+            button = Button18
+            break
+        case(1,9):
+            state = state19
+            button = Button19
+            break
+        case(1,10):
+            state = state110
+            button = Button110
+            break
+        case (_, _):
+            return
+        }
+        
+        if(startfound == false || state01.isStart){
+            button.backgroundColor = UIColor(named: "start")
+            state.makeStart()
+            startfound = true;
+            instructionLabel.text = "Select End"
+        } else if(endfound == false || state01.isEnd){
+            button.backgroundColor = UIColor(named: "finish")
+            state.makeEnd()
+            endfound = true;
+        } else if(state.isPath == true){
+            button.backgroundColor = UIColor(named: "barrier")
+            state.makeBarrier()
+        } else if(state.isBarrier == true){
+            button.backgroundColor = UIColor(named: "defaultTileColor")
+            state.makePath()
+        }
+        
+    }
+    
     //cell Button actions
     
     // - row 0 -------------------------------------------------------
@@ -281,84 +488,38 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // - row 0 -------------------------------------------------------
     
     @IBAction func pressed00(_ sender: Any) {
-        if(startfound == false || state00.isStart){
-            Button00.backgroundColor = UIColor(named: "start")
-            state00.makeStart()
-            startfound = true;
-            instructionLabel.text = "Select End"
-        } else if(endfound == false || state00.isEnd){
-            Button00.backgroundColor = UIColor(named: "finish")
-            state00.makeEnd()
-            endfound = true;
-        } else if(state00.isPath == true){
-            Button00.backgroundColor = UIColor(named: "barrier")
-            state00.makeBarrier()
-        } else if(state00.isBarrier == true){
-            Button00.backgroundColor = UIColor(named: "defaultTileColor")
-            state00.makePath()
-        }
+        cellButtonAction(row: 0, col: 0)
     }
-    
     @IBAction func pressed01(_ sender: Any) {
-        if(startfound == false || state01.isStart){
-            Button01.backgroundColor = UIColor(named: "start")
-            state01.makeStart()
-            startfound = true;
-            instructionLabel.text = "Select End"
-        } else if(endfound == false || state01.isEnd){
-            Button01.backgroundColor = UIColor(named: "finish")
-            state01.makeEnd()
-            endfound = true;
-        } else if(state01.isPath == true){
-            Button01.backgroundColor = UIColor(named: "barrier")
-            state01.makeBarrier()
-        } else if(state01.isBarrier == true){
-            Button01.backgroundColor = UIColor(named: "defaultTileColor")
-            state01.makePath()
-        }
+        cellButtonAction(row: 0, col: 1)
     }
-    
     @IBAction func pressed02(_ sender: Any) {
-        if(startfound == false || state02.isStart){
-            Button02.backgroundColor = UIColor(named: "start")
-            state02.makeStart()
-            startfound = true;
-            instructionLabel.text = "Select End"
-        } else if(endfound == false || state02.isEnd){
-            Button02.backgroundColor = UIColor(named: "finish")
-            state02.makeEnd()
-            endfound = true;
-        } else if(state02.isPath == true){
-            Button02.backgroundColor = UIColor(named: "barrier")
-            state02.makeBarrier()
-        } else if(state02.isBarrier == true){
-            Button02.backgroundColor = UIColor(named: "defaultTileColor")
-            state02.makePath()
-        }
+        cellButtonAction(row: 0, col: 2)
     }
-    
     @IBAction func pressed03(_ sender: Any) {
-        if(startfound == false || state03.isStart){
-            Button03.backgroundColor = UIColor(named: "start")
-            state03.makeStart()
-            startfound = true;
-            instructionLabel.text = "Select End"
-        } else if(endfound == false || state03.isEnd){
-            Button03.backgroundColor = UIColor(named: "finish")
-            state03.makeEnd()
-            endfound = true;
-        } else if(state03.isPath == true){
-            Button03.backgroundColor = UIColor(named: "barrier")
-            state03.makeBarrier()
-        } else if(state03.isBarrier == true){
-            Button03.backgroundColor = UIColor(named: "defaultTileColor")
-            state03.makePath()
-        }
+        cellButtonAction(row: 0, col: 3)
     }
-    
-    
-    
-    
+    @IBAction func pressed04(_ sender: Any) {
+        cellButtonAction(row: 0, col: 4)
+    }
+    @IBAction func pressed05(_ sender: Any) {
+        cellButtonAction(row: 0, col: 5)
+    }
+    @IBAction func pressed06(_ sender: Any) {
+        cellButtonAction(row: 0, col: 6)
+    }
+    @IBAction func pressed07(_ sender: Any) {
+        cellButtonAction(row: 0, col: 7)
+    }
+    @IBAction func pressed08(_ sender: Any) {
+        cellButtonAction(row: 0, col: 8)
+    }
+    @IBAction func pressed09(_ sender: Any) {
+        cellButtonAction(row: 0, col: 9)
+    }
+    @IBAction func pressed010(_ sender: Any) {
+        cellButtonAction(row: 0, col: 10)
+    }
     // - row 1 -------------------------------------------------------
     // - row 1 -------------------------------------------------------
     // - row 1 -------------------------------------------------------
