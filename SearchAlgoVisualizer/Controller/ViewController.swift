@@ -434,10 +434,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var Button14_10: UIButton!
     
     //row15
-    
-    
-    
-    
+    @IBOutlet weak var Button150: UIButton!
+    @IBOutlet weak var Button151: UIButton!
+    @IBOutlet weak var Button152: UIButton!
+    @IBOutlet weak var Button153: UIButton!
+    @IBOutlet weak var Button154: UIButton!
+    @IBOutlet weak var Button155: UIButton!
+    @IBOutlet weak var Button156: UIButton!
+    @IBOutlet weak var Button157: UIButton!
+    @IBOutlet weak var Button158: UIButton!
+    @IBOutlet weak var Button159: UIButton!
+    @IBOutlet weak var Button15_10: UIButton!
     
     
     //cell buttons end------------------------------
@@ -516,6 +523,163 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         state39.resetState()
         state3_10.resetState()
         
+        //row4
+        state40.resetState()
+        state41.resetState()
+        state42.resetState()
+        state43.resetState()
+        state44.resetState()
+        state45.resetState()
+        state46.resetState()
+        state47.resetState()
+        state48.resetState()
+        state49.resetState()
+        state4_10.resetState()
+        
+        //row5
+        state50.resetState()
+        state51.resetState()
+        state52.resetState()
+        state53.resetState()
+        state54.resetState()
+        state55.resetState()
+        state56.resetState()
+        state57.resetState()
+        state58.resetState()
+        state59.resetState()
+        state5_10.resetState()
+        
+        //row6
+        state60.resetState()
+        state61.resetState()
+        state62.resetState()
+        state63.resetState()
+        state64.resetState()
+        state65.resetState()
+        state66.resetState()
+        state67.resetState()
+        state68.resetState()
+        state69.resetState()
+        state6_10.resetState()
+        
+        //row7
+        state70.resetState()
+        state71.resetState()
+        state72.resetState()
+        state73.resetState()
+        state74.resetState()
+        state75.resetState()
+        state76.resetState()
+        state77.resetState()
+        state78.resetState()
+        state79.resetState()
+        state7_10.resetState()
+        
+        //row8
+        state80.resetState()
+        state81.resetState()
+        state82.resetState()
+        state83.resetState()
+        state84.resetState()
+        state85.resetState()
+        state86.resetState()
+        state87.resetState()
+        state88.resetState()
+        state89.resetState()
+        state8_10.resetState()
+        
+        //row9
+        state90.resetState()
+        state91.resetState()
+        state92.resetState()
+        state93.resetState()
+        state94.resetState()
+        state95.resetState()
+        state96.resetState()
+        state97.resetState()
+        state98.resetState()
+        state99.resetState()
+        state9_10.resetState()
+        
+        //row10
+        state100.resetState()
+        state101.resetState()
+        state102.resetState()
+        state103.resetState()
+        state104.resetState()
+        state105.resetState()
+        state106.resetState()
+        state107.resetState()
+        state108.resetState()
+        state109.resetState()
+        state10_10.resetState()
+        
+        //row11
+        state110.resetState()
+        state111.resetState()
+        state112.resetState()
+        state113.resetState()
+        state114.resetState()
+        state115.resetState()
+        state116.resetState()
+        state117.resetState()
+        state118.resetState()
+        state119.resetState()
+        state11_10.resetState()
+        
+        //row12
+        state120.resetState()
+        state121.resetState()
+        state122.resetState()
+        state123.resetState()
+        state124.resetState()
+        state125.resetState()
+        state126.resetState()
+        state127.resetState()
+        state128.resetState()
+        state129.resetState()
+        state12_10.resetState()
+        
+        //row13
+        state130.resetState()
+        state131.resetState()
+        state132.resetState()
+        state133.resetState()
+        state134.resetState()
+        state135.resetState()
+        state136.resetState()
+        state137.resetState()
+        state138.resetState()
+        state139.resetState()
+        state13_10.resetState()
+        
+        //row14
+        state140.resetState()
+        state141.resetState()
+        state142.resetState()
+        state143.resetState()
+        state144.resetState()
+        state145.resetState()
+        state146.resetState()
+        state147.resetState()
+        state148.resetState()
+        state149.resetState()
+        state14_10.resetState()
+        
+        //row15
+        state150.resetState()
+        state151.resetState()
+        state152.resetState()
+        state153.resetState()
+        state154.resetState()
+        state155.resetState()
+        state156.resetState()
+        state157.resetState()
+        state158.resetState()
+        state159.resetState()
+        state15_10.resetState()
+        
+        
         //reseting all cell colors ----------------
         //row0
         Button00.backgroundColor = UIColor(named: "defaultTileColor")
@@ -569,6 +733,161 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         Button39.backgroundColor = UIColor(named: "defaultTileColor")
         Button3_10.backgroundColor = UIColor(named: "defaultTileColor")
         
+        //row4
+        Button40.backgroundColor = UIColor(named: "defaultTileColor")
+        Button41.backgroundColor = UIColor(named: "defaultTileColor")
+        Button42.backgroundColor = UIColor(named: "defaultTileColor")
+        Button43.backgroundColor = UIColor(named: "defaultTileColor")
+        Button44.backgroundColor = UIColor(named: "defaultTileColor")
+        Button45.backgroundColor = UIColor(named: "defaultTileColor")
+        Button46.backgroundColor = UIColor(named: "defaultTileColor")
+        Button47.backgroundColor = UIColor(named: "defaultTileColor")
+        Button48.backgroundColor = UIColor(named: "defaultTileColor")
+        Button49.backgroundColor = UIColor(named: "defaultTileColor")
+        Button4_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row5
+        Button50.backgroundColor = UIColor(named: "defaultTileColor")
+        Button51.backgroundColor = UIColor(named: "defaultTileColor")
+        Button52.backgroundColor = UIColor(named: "defaultTileColor")
+        Button53.backgroundColor = UIColor(named: "defaultTileColor")
+        Button54.backgroundColor = UIColor(named: "defaultTileColor")
+        Button55.backgroundColor = UIColor(named: "defaultTileColor")
+        Button56.backgroundColor = UIColor(named: "defaultTileColor")
+        Button57.backgroundColor = UIColor(named: "defaultTileColor")
+        Button58.backgroundColor = UIColor(named: "defaultTileColor")
+        Button59.backgroundColor = UIColor(named: "defaultTileColor")
+        Button5_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row6
+        Button60.backgroundColor = UIColor(named: "defaultTileColor")
+        Button61.backgroundColor = UIColor(named: "defaultTileColor")
+        Button62.backgroundColor = UIColor(named: "defaultTileColor")
+        Button63.backgroundColor = UIColor(named: "defaultTileColor")
+        Button64.backgroundColor = UIColor(named: "defaultTileColor")
+        Button65.backgroundColor = UIColor(named: "defaultTileColor")
+        Button66.backgroundColor = UIColor(named: "defaultTileColor")
+        Button67.backgroundColor = UIColor(named: "defaultTileColor")
+        Button68.backgroundColor = UIColor(named: "defaultTileColor")
+        Button69.backgroundColor = UIColor(named: "defaultTileColor")
+        Button6_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row7
+        Button70.backgroundColor = UIColor(named: "defaultTileColor")
+        Button71.backgroundColor = UIColor(named: "defaultTileColor")
+        Button72.backgroundColor = UIColor(named: "defaultTileColor")
+        Button73.backgroundColor = UIColor(named: "defaultTileColor")
+        Button74.backgroundColor = UIColor(named: "defaultTileColor")
+        Button75.backgroundColor = UIColor(named: "defaultTileColor")
+        Button76.backgroundColor = UIColor(named: "defaultTileColor")
+        Button77.backgroundColor = UIColor(named: "defaultTileColor")
+        Button78.backgroundColor = UIColor(named: "defaultTileColor")
+        Button79.backgroundColor = UIColor(named: "defaultTileColor")
+        Button7_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row8
+        Button80.backgroundColor = UIColor(named: "defaultTileColor")
+        Button81.backgroundColor = UIColor(named: "defaultTileColor")
+        Button82.backgroundColor = UIColor(named: "defaultTileColor")
+        Button83.backgroundColor = UIColor(named: "defaultTileColor")
+        Button84.backgroundColor = UIColor(named: "defaultTileColor")
+        Button85.backgroundColor = UIColor(named: "defaultTileColor")
+        Button86.backgroundColor = UIColor(named: "defaultTileColor")
+        Button87.backgroundColor = UIColor(named: "defaultTileColor")
+        Button88.backgroundColor = UIColor(named: "defaultTileColor")
+        Button89.backgroundColor = UIColor(named: "defaultTileColor")
+        Button8_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row9
+        Button90.backgroundColor = UIColor(named: "defaultTileColor")
+        Button91.backgroundColor = UIColor(named: "defaultTileColor")
+        Button92.backgroundColor = UIColor(named: "defaultTileColor")
+        Button93.backgroundColor = UIColor(named: "defaultTileColor")
+        Button94.backgroundColor = UIColor(named: "defaultTileColor")
+        Button95.backgroundColor = UIColor(named: "defaultTileColor")
+        Button96.backgroundColor = UIColor(named: "defaultTileColor")
+        Button97.backgroundColor = UIColor(named: "defaultTileColor")
+        Button98.backgroundColor = UIColor(named: "defaultTileColor")
+        Button99.backgroundColor = UIColor(named: "defaultTileColor")
+        Button9_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row10
+        Button100.backgroundColor = UIColor(named: "defaultTileColor")
+        Button101.backgroundColor = UIColor(named: "defaultTileColor")
+        Button102.backgroundColor = UIColor(named: "defaultTileColor")
+        Button103.backgroundColor = UIColor(named: "defaultTileColor")
+        Button104.backgroundColor = UIColor(named: "defaultTileColor")
+        Button105.backgroundColor = UIColor(named: "defaultTileColor")
+        Button106.backgroundColor = UIColor(named: "defaultTileColor")
+        Button107.backgroundColor = UIColor(named: "defaultTileColor")
+        Button108.backgroundColor = UIColor(named: "defaultTileColor")
+        Button109.backgroundColor = UIColor(named: "defaultTileColor")
+        Button10_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row11
+        Button110.backgroundColor = UIColor(named: "defaultTileColor")
+        Button111.backgroundColor = UIColor(named: "defaultTileColor")
+        Button112.backgroundColor = UIColor(named: "defaultTileColor")
+        Button113.backgroundColor = UIColor(named: "defaultTileColor")
+        Button114.backgroundColor = UIColor(named: "defaultTileColor")
+        Button115.backgroundColor = UIColor(named: "defaultTileColor")
+        Button116.backgroundColor = UIColor(named: "defaultTileColor")
+        Button117.backgroundColor = UIColor(named: "defaultTileColor")
+        Button118.backgroundColor = UIColor(named: "defaultTileColor")
+        Button119.backgroundColor = UIColor(named: "defaultTileColor")
+        Button11_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row12
+        Button120.backgroundColor = UIColor(named: "defaultTileColor")
+        Button121.backgroundColor = UIColor(named: "defaultTileColor")
+        Button122.backgroundColor = UIColor(named: "defaultTileColor")
+        Button123.backgroundColor = UIColor(named: "defaultTileColor")
+        Button124.backgroundColor = UIColor(named: "defaultTileColor")
+        Button125.backgroundColor = UIColor(named: "defaultTileColor")
+        Button126.backgroundColor = UIColor(named: "defaultTileColor")
+        Button127.backgroundColor = UIColor(named: "defaultTileColor")
+        Button128.backgroundColor = UIColor(named: "defaultTileColor")
+        Button129.backgroundColor = UIColor(named: "defaultTileColor")
+        Button12_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row13
+        Button130.backgroundColor = UIColor(named: "defaultTileColor")
+        Button131.backgroundColor = UIColor(named: "defaultTileColor")
+        Button132.backgroundColor = UIColor(named: "defaultTileColor")
+        Button133.backgroundColor = UIColor(named: "defaultTileColor")
+        Button134.backgroundColor = UIColor(named: "defaultTileColor")
+        Button135.backgroundColor = UIColor(named: "defaultTileColor")
+        Button136.backgroundColor = UIColor(named: "defaultTileColor")
+        Button137.backgroundColor = UIColor(named: "defaultTileColor")
+        Button138.backgroundColor = UIColor(named: "defaultTileColor")
+        Button139.backgroundColor = UIColor(named: "defaultTileColor")
+        Button13_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row14
+        Button140.backgroundColor = UIColor(named: "defaultTileColor")
+        Button141.backgroundColor = UIColor(named: "defaultTileColor")
+        Button142.backgroundColor = UIColor(named: "defaultTileColor")
+        Button143.backgroundColor = UIColor(named: "defaultTileColor")
+        Button144.backgroundColor = UIColor(named: "defaultTileColor")
+        Button145.backgroundColor = UIColor(named: "defaultTileColor")
+        Button146.backgroundColor = UIColor(named: "defaultTileColor")
+        Button147.backgroundColor = UIColor(named: "defaultTileColor")
+        Button148.backgroundColor = UIColor(named: "defaultTileColor")
+        Button149.backgroundColor = UIColor(named: "defaultTileColor")
+        Button14_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        //row15
+        Button150.backgroundColor = UIColor(named: "defaultTileColor")
+        Button151.backgroundColor = UIColor(named: "defaultTileColor")
+        Button152.backgroundColor = UIColor(named: "defaultTileColor")
+        Button153.backgroundColor = UIColor(named: "defaultTileColor")
+        Button154.backgroundColor = UIColor(named: "defaultTileColor")
+        Button155.backgroundColor = UIColor(named: "defaultTileColor")
+        Button156.backgroundColor = UIColor(named: "defaultTileColor")
+        Button157.backgroundColor = UIColor(named: "defaultTileColor")
+        Button158.backgroundColor = UIColor(named: "defaultTileColor")
+        Button159.backgroundColor = UIColor(named: "defaultTileColor")
+        Button15_10.backgroundColor = UIColor(named: "defaultTileColor")
     }
     @IBAction func runPressed(_ sender: Any) {
         if(startfound == false){
@@ -699,9 +1018,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //cell Button actions
     
     // - row 0 -------------------------------------------------------
-    // - row 0 -------------------------------------------------------
-    // - row 0 -------------------------------------------------------
-    
     @IBAction func pressed00(_ sender: Any) {
         cellButtonAction(row: 0, col: 0)
     }
@@ -732,26 +1048,240 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func pressed09(_ sender: Any) {
         cellButtonAction(row: 0, col: 9)
     }
-    @IBAction func pressed010(_ sender: Any) {
+    @IBAction func pressed0_10(_ sender: Any) {
         cellButtonAction(row: 0, col: 10)
     }
+    
     // - row 1 -------------------------------------------------------
-    // - row 1 -------------------------------------------------------
-    // - row 1 -------------------------------------------------------
+    @IBAction func pressed10(_ sender: Any) {
+        cellButtonAction(row: 1, col: 0)
+    }
+    @IBAction func pressed11(_ sender: Any) {
+        cellButtonAction(row: 1, col: 1)
+    }
+    @IBAction func pressed12(_ sender: Any) {
+        cellButtonAction(row: 1, col: 2)
+    }
+    @IBAction func pressed13(_ sender: Any) {
+        cellButtonAction(row: 1, col: 3)
+    }
+    @IBAction func pressed14(_ sender: Any) {
+        cellButtonAction(row: 1, col: 4)
+    }
+    @IBAction func pressed15(_ sender: Any) {
+        cellButtonAction(row: 1, col: 5)
+    }
+    @IBAction func pressed16(_ sender: Any) {
+        cellButtonAction(row: 1, col: 6)
+    }
+    @IBAction func pressed17(_ sender: Any) {
+        cellButtonAction(row: 1, col: 7)
+    }
+    @IBAction func pressed18(_ sender: Any) {
+        cellButtonAction(row: 1, col: 8)
+    }
     
+    @IBAction func pressed19(_ sender: Any) {
+        cellButtonAction(row: 1, col: 9)
+    }
+    @IBAction func pressed1_10(_ sender: Any) {
+        cellButtonAction(row: 1, col: 10)
+    }
     
+    // - row 2 -------------------------------------------------------
+    @IBAction func pressed20(_ sender: Any) {
+        cellButtonAction(row: 2, col: 0)
+    }
+    @IBAction func pressed21(_ sender: Any) {
+        cellButtonAction(row: 2, col: 1)
+    }
+    @IBAction func pressed22(_ sender: Any) {
+        cellButtonAction(row: 2, col: 2)
+    }
+    @IBAction func pressed23(_ sender: Any) {
+        cellButtonAction(row: 2, col: 3)
+    }
+    @IBAction func pressed24(_ sender: Any) {
+        cellButtonAction(row: 2, col: 4)
+    }
+    @IBAction func pressed25(_ sender: Any) {
+        cellButtonAction(row: 2, col: 5)
+    }
+    @IBAction func pressed26(_ sender: Any) {
+        cellButtonAction(row: 2, col: 6)
+    }
+    @IBAction func pressed27(_ sender: Any) {
+        cellButtonAction(row: 2, col: 7)
+    }
+    @IBAction func pressed28(_ sender: Any) {
+        cellButtonAction(row: 2, col: 8)
+    }
+    @IBAction func pressed29(_ sender: Any) {
+        cellButtonAction(row: 2, col: 9)
+    }
+    @IBAction func pressed2_10(_ sender: Any) {
+        cellButtonAction(row: 2, col: 10)
+    }
     
+    // - row 3 -------------------------------------------------------
+    @IBAction func pressed30(_ sender: Any) {
+        cellButtonAction(row: 3, col: 0)
+    }
+    @IBAction func pressed31(_ sender: Any) {
+        cellButtonAction(row: 3, col: 1)
+    }
+    @IBAction func pressed32(_ sender: Any) {
+        cellButtonAction(row: 3, col: 2)
+    }
+    @IBAction func pressed33(_ sender: Any) {
+        cellButtonAction(row: 3, col: 3)
+    }
+    @IBAction func pressed34(_ sender: Any) {
+        cellButtonAction(row: 3, col: 4)
+    }
+    @IBAction func pressed35(_ sender: Any) {
+        cellButtonAction(row: 3, col: 5)
+    }
+    @IBAction func pressed36(_ sender: Any) {
+        cellButtonAction(row: 3, col: 6)
+    }
+    @IBAction func pressed37(_ sender: Any) {
+        cellButtonAction(row: 3, col: 7)
+    }
+    @IBAction func pressed38(_ sender: Any) {
+        cellButtonAction(row: 3, col: 8)
+    }
+    @IBAction func pressed39(_ sender: Any) {
+        cellButtonAction(row: 3, col: 9)
+    }
+    @IBAction func pressed3_10(_ sender: Any) {
+        cellButtonAction(row: 3, col: 10)
+    }
     
+    // - row 4 -------------------------------------------------------
+    @IBAction func pressed40(_ sender: Any) {
+        cellButtonAction(row: 4, col: 0)
+    }
+    @IBAction func pressed41(_ sender: Any) {
+        cellButtonAction(row: 4, col: 1)
+    }
+    @IBAction func pressed42(_ sender: Any) {
+        cellButtonAction(row: 4, col: 2)
+    }
+    @IBAction func pressed43(_ sender: Any) {
+        cellButtonAction(row: 4, col: 3)
+    }
+    @IBAction func pressed44(_ sender: Any) {
+        cellButtonAction(row: 4, col: 4)
+    }
+    @IBAction func pressed45(_ sender: Any) {
+        cellButtonAction(row: 4, col: 5)
+    }
+    @IBAction func pressed46(_ sender: Any) {
+        cellButtonAction(row: 4, col: 6)
+    }
+    @IBAction func pressed47(_ sender: Any) {
+        cellButtonAction(row: 4, col: 7)
+    }
+    @IBAction func pressed48(_ sender: Any) {
+        cellButtonAction(row: 4, col: 8)
+    }
+    @IBAction func pressed49(_ sender: Any) {
+        cellButtonAction(row: 4, col: 9)
+    }
+    @IBAction func pressed4_10(_ sender: Any) {
+        cellButtonAction(row: 4, col: 10)
+    }
     
+    // - row 5 -------------------------------------------------------
+    @IBAction func pressed50(_ sender: Any) {
+        cellButtonAction(row: 5, col: 0)
+    }
+    @IBAction func pressed51(_ sender: Any) {
+        cellButtonAction(row: 5, col: 1)
+    }
+    @IBAction func pressed52(_ sender: Any) {
+        cellButtonAction(row: 5, col: 2)
+    }
+    @IBAction func pressed53(_ sender: Any) {
+        cellButtonAction(row: 5, col: 3)
+    }
+    @IBAction func pressed54(_ sender: Any) {
+        cellButtonAction(row: 5, col: 4)
+    }
+    @IBAction func pressed55(_ sender: Any) {
+        cellButtonAction(row: 5, col: 5)
+    }
+    @IBAction func pressed56(_ sender: Any) {
+        cellButtonAction(row: 5, col: 6)
+    }
+    @IBAction func pressed57(_ sender: Any) {
+        cellButtonAction(row: 5, col: 7)
+    }
+    @IBAction func pressed58(_ sender: Any) {
+        cellButtonAction(row: 5, col: 8)
+    }
+    @IBAction func pressed59(_ sender: Any) {
+        cellButtonAction(row: 5, col: 9)
+    }
+    @IBAction func pressed5_10(_ sender: Any) {
+        cellButtonAction(row: 5, col: 10)
+    }
     
+    // - row 6 -------------------------------------------------------
+    @IBAction func pressed60(_ sender: Any) {
+        cellButtonAction(row: 6, col: 0)
+    }
+    @IBAction func pressed61(_ sender: Any) {
+        cellButtonAction(row: 6, col: 1)
+    }
+    @IBAction func pressed62(_ sender: Any) {
+        cellButtonAction(row: 6, col: 2)
+    }
+    @IBAction func pressed63(_ sender: Any) {
+        cellButtonAction(row: 6, col: 3)
+    }
+    @IBAction func pressed64(_ sender: Any) {
+        cellButtonAction(row: 6, col: 4)
+    }
+    @IBAction func pressed65(_ sender: Any) {
+        cellButtonAction(row: 6, col: 5)
+    }
+    @IBAction func pressed66(_ sender: Any) {
+        cellButtonAction(row: 6, col: 6)
+    }
+    @IBAction func pressed67(_ sender: Any) {
+        cellButtonAction(row: 6, col: 7)
+    }
+    @IBAction func pressed68(_ sender: Any) {
+        cellButtonAction(row: 6, col: 8)
+    }
+    @IBAction func pressed69(_ sender: Any) {
+        cellButtonAction(row: 6, col: 9)
+    }
+    @IBAction func pressed6_10(_ sender: Any) {
+        cellButtonAction(row: 6, col: 10)
+    }
     
+    // - row 7 -------------------------------------------------------
+    @IBAction func pressed70(_ sender: Any) {
+    }
     
+    // - row 8 -------------------------------------------------------
     
+    // - row 9 -------------------------------------------------------
     
+    // - row 10 -------------------------------------------------------
     
+    // - row 11 -------------------------------------------------------
     
+    // - row 12 -------------------------------------------------------
     
+    // - row 13 -------------------------------------------------------
     
+    // - row 14 -------------------------------------------------------
+    
+    // - row 15 -------------------------------------------------------
     
     
     
