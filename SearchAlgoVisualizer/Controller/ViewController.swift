@@ -1265,15 +1265,179 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // - row 7 -------------------------------------------------------
     @IBAction func pressed70(_ sender: Any) {
+        cellButtonAction(row: 7, col: 0)
+    }
+    @IBAction func pressed71(_ sender: Any) {
+        cellButtonAction(row: 7, col: 1)
+    }
+    @IBAction func pressed72(_ sender: Any) {
+        cellButtonAction(row: 7, col: 2)
+    }
+    @IBAction func pressed73(_ sender: Any) {
+        cellButtonAction(row: 7, col: 3)
+    }
+    @IBAction func pressed74(_ sender: Any) {
+        cellButtonAction(row: 7, col: 4)
+    }
+    @IBAction func pressed75(_ sender: Any) {
+        cellButtonAction(row: 7, col: 5)
+    }
+    @IBAction func pressed76(_ sender: Any) {
+        cellButtonAction(row: 7, col: 6)
+    }
+    @IBAction func pressed77(_ sender: Any) {
+        cellButtonAction(row: 7, col: 7)
+    }
+    @IBAction func pressed78(_ sender: Any) {
+        cellButtonAction(row: 7, col: 8)
+    }
+    @IBAction func pressed79(_ sender: Any) {
+        cellButtonAction(row: 7, col: 9)
+    }
+    @IBAction func pressed7_10(_ sender: Any) {
+        cellButtonAction(row: 7, col: 10)
     }
     
     // - row 8 -------------------------------------------------------
+    @IBAction func pressed80(_ sender: Any) {
+        cellButtonAction(row: 8, col: 0)
+    }
+    @IBAction func pressed81(_ sender: Any) {
+        cellButtonAction(row: 8, col: 1)
+    }
+    @IBAction func pressed82(_ sender: Any) {
+        cellButtonAction(row: 8, col: 2)
+    }
+    @IBAction func pressed83(_ sender: Any) {
+        cellButtonAction(row: 8, col: 3)
+    }
+    @IBAction func pressed84(_ sender: Any) {
+        cellButtonAction(row: 8, col: 4)
+    }
+    @IBAction func pressed85(_ sender: Any) {
+        cellButtonAction(row: 8, col: 5)
+    }
+    @IBAction func pressed86(_ sender: Any) {
+        cellButtonAction(row: 8, col: 6)
+    }
+    @IBAction func pressed87(_ sender: Any) {
+        cellButtonAction(row: 8, col: 7)
+    }
+    @IBAction func pressed88(_ sender: Any) {
+        cellButtonAction(row: 8, col: 8)
+    }
+    @IBAction func pressed89(_ sender: Any) {
+        cellButtonAction(row: 8, col: 9)
+    }
+    @IBAction func pressed8_10(_ sender: Any) {
+        cellButtonAction(row: 8, col: 10)
+    }
     
     // - row 9 -------------------------------------------------------
+    @IBAction func pressed90(_ sender: Any) {
+        cellButtonAction(row: 9, col: 0)
+    }
+    @IBAction func pressed91(_ sender: Any) {
+        cellButtonAction(row: 9, col: 1)
+    }
+    @IBAction func pressed92(_ sender: Any) {
+        cellButtonAction(row: 9, col: 2)
+    }
+    @IBAction func pressed93(_ sender: Any) {
+        cellButtonAction(row: 9, col: 3)
+    }
+    @IBAction func pressed94(_ sender: Any) {
+        cellButtonAction(row: 9, col: 4)
+    }
+    @IBAction func pressed95(_ sender: Any) {
+        cellButtonAction(row: 9, col: 5)
+    }
+    @IBAction func pressed96(_ sender: Any) {
+        cellButtonAction(row: 9, col: 6)
+    }
+    @IBAction func pressed97(_ sender: Any) {
+        cellButtonAction(row: 9, col: 7)
+    }
+    @IBAction func pressed98(_ sender: Any) {
+        cellButtonAction(row: 9, col: 8)
+    }
+    @IBAction func pressed99(_ sender: Any) {
+        cellButtonAction(row: 9, col: 9)
+    }
+    @IBAction func pressed9_10(_ sender: Any) {
+        cellButtonAction(row: 9, col: 10)
+    }
     
     // - row 10 -------------------------------------------------------
+    @IBAction func pressed100(_ sender: Any) {
+        cellButtonAction(row: 10, col: 0)
+    }
+    @IBAction func pressed101(_ sender: Any) {
+        cellButtonAction(row: 10, col: 1)
+    }
+    @IBAction func pressed102(_ sender: Any) {
+        cellButtonAction(row: 10, col: 2)
+    }
+    @IBAction func pressed103(_ sender: Any) {
+        cellButtonAction(row: 10, col: 3)
+    }
+    @IBAction func pressed104(_ sender: Any) {
+        cellButtonAction(row: 10, col: 4)
+    }
+    @IBAction func pressed105(_ sender: Any) {
+        cellButtonAction(row: 10, col: 5)
+    }
+    @IBAction func pressed106(_ sender: Any) {
+        cellButtonAction(row: 10, col: 6)
+    }
+    @IBAction func pressed107(_ sender: Any) {
+        cellButtonAction(row: 10, col: 7)
+    }
+    @IBAction func pressed108(_ sender: Any) {
+        cellButtonAction(row: 10, col: 8)
+    }
+    @IBAction func pressed109(_ sender: Any) {
+        cellButtonAction(row: 10, col: 9)
+    }
+    @IBAction func pressed10_10(_ sender: Any) {
+        cellButtonAction(row: 10, col: 10)
+    }
+    
     
     // - row 11 -------------------------------------------------------
+    @IBAction func pressed110(_ sender: Any) {
+        cellButtonAction(row: 11, col: 0)
+    }
+    @IBAction func pressed111(_ sender: Any) {
+        cellButtonAction(row: 11, col: 1)
+    }
+    @IBAction func pressed112(_ sender: Any) {
+        cellButtonAction(row: 11, col: 2)
+    }
+    @IBAction func pressed113(_ sender: Any) {
+        cellButtonAction(row: 11, col: 3)
+    }
+    @IBAction func pressed114(_ sender: Any) {
+        cellButtonAction(row: 11, col: 4)
+    }
+    @IBAction func pressed115(_ sender: Any) {
+        cellButtonAction(row: 11, col: 5)
+    }
+    @IBAction func pressed116(_ sender: Any) {
+        cellButtonAction(row: 11, col: 6)
+    }
+    @IBAction func pressed117(_ sender: Any) {
+        cellButtonAction(row: 11, col: 7)
+    }
+    @IBAction func pressed118(_ sender: Any) {
+        cellButtonAction(row: 11, col: 8)
+    }
+    @IBAction func pressed119(_ sender: Any) {
+        cellButtonAction(row: 11, col: 9)
+    }
+    @IBAction func pressed11_10(_ sender: Any) {
+        cellButtonAction(row: 11, col: 10)
+    }
     
     // - row 12 -------------------------------------------------------
     
