@@ -992,6 +992,226 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             state = state1_10
             button = Button1_10
             break
+        case(2,0):                  //row 2 --------
+            state = state20
+            button = Button20
+            break
+        case(2,1):
+            state = state21
+            button = Button21
+            break
+        case(2,2):
+            state = state22
+            button = Button22
+            break
+        case(2,3):
+            state = state23
+            button = Button23
+            break
+        case(2,4):
+            state = state24
+            button = Button24
+            break
+        case(2,5):
+            state = state25
+            button = Button25
+            break
+        case(2,6):
+            state = state26
+            button = Button26
+            break
+        case(2,7):
+            state = state27
+            button = Button27
+            break
+        case(2,8):
+            state = state28
+            button = Button28
+            break
+        case(2,9):
+            state = state29
+            button = Button29
+            break
+        case(2,10):
+            state = state2_10
+            button = Button2_10
+            break
+        case(3,0):                  //row 3 --------
+            state = state30
+            button = Button30
+            break
+        case(3,1):
+            state = state31
+            button = Button31
+            break
+        case(3,2):
+            state = state32
+            button = Button32
+            break
+        case(3,3):
+            state = state33
+            button = Button33
+            break
+        case(3,4):
+            state = state34
+            button = Button34
+            break
+        case(3,5):
+            state = state35
+            button = Button35
+            break
+        case(3,6):
+            state = state36
+            button = Button36
+            break
+        case(3,7):
+            state = state37
+            button = Button37
+            break
+        case(3,8):
+            state = state38
+            button = Button38
+            break
+        case(3,9):
+            state = state39
+            button = Button39
+            break
+        case(3,10):
+            state = state3_10
+            button = Button3_10
+            break
+        case(4,0):                  //row 4 --------
+            state = state40
+            button = Button40
+            break
+        case(4,1):
+            state = state41
+            button = Button41
+            break
+        case(4,2):
+            state = state42
+            button = Button42
+            break
+        case(4,3):
+            state = state43
+            button = Button43
+            break
+        case(4,4):
+            state = state44
+            button = Button44
+            break
+        case(4,5):
+            state = state45
+            button = Button45
+            break
+        case(4,6):
+            state = state46
+            button = Button46
+            break
+        case(4,7):
+            state = state47
+            button = Button47
+            break
+        case(4,8):
+            state = state48
+            button = Button48
+            break
+        case(4,9):
+            state = state49
+            button = Button49
+            break
+        case(4,10):
+            state = state4_10
+            button = Button4_10
+            break
+        case(5,0):                  //row 5 --------
+            state = state50
+            button = Button50
+            break
+        case(5,1):
+            state = state51
+            button = Button51
+            break
+        case(5,2):
+            state = state52
+            button = Button52
+            break
+        case(5,3):
+            state = state53
+            button = Button53
+            break
+        case(5,4):
+            state = state54
+            button = Button54
+            break
+        case(5,5):
+            state = state55
+            button = Button55
+            break
+        case(5,6):
+            state = state56
+            button = Button56
+            break
+        case(5,7):
+            state = state57
+            button = Button57
+            break
+        case(5,8):
+            state = state58
+            button = Button58
+            break
+        case(5,9):
+            state = state59
+            button = Button59
+            break
+        case(5,10):
+            state = state5_10
+            button = Button5_10
+            break
+        case(6,0):                  //row 6 --------
+            state = state60
+            button = Button60
+            break
+        case(6,1):
+            state = state61
+            button = Button61
+            break
+        case(6,2):
+            state = state62
+            button = Button62
+            break
+        case(6,3):
+            state = state63
+            button = Button63
+            break
+        case(6,4):
+            state = state64
+            button = Button64
+            break
+        case(6,5):
+            state = state65
+            button = Button65
+            break
+        case(6,6):
+            state = state66
+            button = Button66
+            break
+        case(6,7):
+            state = state67
+            button = Button67
+            break
+        case(6,8):
+            state = state68
+            button = Button68
+            break
+        case(6,9):
+            state = state69
+            button = Button69
+            break
+        case(6,10):
+            state = state6_10
+            button = Button6_10
+            break
         case (_, _):
             return
         }
@@ -1440,16 +1660,146 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     // - row 12 -------------------------------------------------------
+    @IBAction func pressed120(_ sender: Any) {
+        cellButtonAction(row: 12, col: 0)
+    }
+    @IBAction func pressed121(_ sender: Any) {
+        cellButtonAction(row: 12, col: 1)
+    }
+    @IBAction func pressed122(_ sender: Any) {
+        cellButtonAction(row: 12, col: 2)
+    }
+    @IBAction func pressed123(_ sender: Any) {
+        cellButtonAction(row: 12, col: 3)
+    }
+    @IBAction func pressed124(_ sender: Any) {
+        cellButtonAction(row: 12, col: 4)
+    }
+    @IBAction func pressed125(_ sender: Any) {
+        cellButtonAction(row: 12, col: 5)
+    }
+    @IBAction func pressed126(_ sender: Any) {
+        cellButtonAction(row: 12, col: 6)
+    }
+    @IBAction func pressed127(_ sender: Any) {
+        cellButtonAction(row: 12, col: 7)
+    }
+    @IBAction func pressed128(_ sender: Any) {
+        cellButtonAction(row: 12, col: 8)
+    }
+    @IBAction func pressed129(_ sender: Any) {
+        cellButtonAction(row: 12, col: 9)
+    }
+    @IBAction func pressed12_10(_ sender: Any) {
+        cellButtonAction(row: 12, col: 10)
+    }
     
     // - row 13 -------------------------------------------------------
+    @IBAction func pressed130(_ sender: Any) {
+        cellButtonAction(row: 13, col: 0)
+    }
+    @IBAction func pressed131(_ sender: Any) {
+        cellButtonAction(row: 13, col: 1)
+    }
+    @IBAction func pressed132(_ sender: Any) {
+        cellButtonAction(row: 13, col: 2)
+    }
+    @IBAction func pressed133(_ sender: Any) {
+        cellButtonAction(row: 13, col: 3)
+    }
+    @IBAction func pressed134(_ sender: Any) {
+        cellButtonAction(row: 13, col: 4)
+    }
+    @IBAction func pressed135(_ sender: Any) {
+        cellButtonAction(row: 13, col: 5)
+    }
+    @IBAction func pressed136(_ sender: Any) {
+        cellButtonAction(row: 13, col: 6)
+    }
+    @IBAction func pressed137(_ sender: Any) {
+        cellButtonAction(row: 13, col: 7)
+    }
+    @IBAction func pressed138(_ sender: Any) {
+        cellButtonAction(row: 13, col: 8)
+    }
+    @IBAction func pressed139(_ sender: Any) {
+        cellButtonAction(row: 13, col: 9)
+    }
+    @IBAction func pressed13_10(_ sender: Any) {
+        cellButtonAction(row: 13, col: 10)
+    }
     
     // - row 14 -------------------------------------------------------
+    @IBAction func pressed140(_ sender: Any) {
+        cellButtonAction(row: 14, col: 0)
+    }
+    @IBAction func pressed141(_ sender: Any) {
+        cellButtonAction(row: 14, col: 1)
+    }
+    @IBAction func pressed142(_ sender: Any) {
+        cellButtonAction(row: 14, col: 2)
+    }
+    @IBAction func pressed143(_ sender: Any) {
+        cellButtonAction(row: 14, col: 3)
+    }
+    @IBAction func pressed144(_ sender: Any) {
+        cellButtonAction(row: 14, col: 4)
+    }
+    @IBAction func pressed145(_ sender: Any) {
+        cellButtonAction(row: 14, col: 5)
+    }
+    @IBAction func pressed146(_ sender: Any) {
+        cellButtonAction(row: 14, col: 6)
+    }
+    @IBAction func pressed147(_ sender: Any) {
+        cellButtonAction(row: 14, col: 7)
+    }
+    @IBAction func pressed148(_ sender: Any) {
+        cellButtonAction(row: 14, col: 8)
+    }
+    @IBAction func pressed149(_ sender: Any) {
+        cellButtonAction(row: 14, col: 9)
+    }
+    @IBAction func pressed14_10(_ sender: Any) {
+        cellButtonAction(row: 14, col: 10)
+    }
     
     // - row 15 -------------------------------------------------------
+    @IBAction func pressed150(_ sender: Any) {
+        cellButtonAction(row: 15, col: 0)
+    }
+    @IBAction func pressed151(_ sender: Any) {
+        cellButtonAction(row: 15, col: 1)
+    }
+    @IBAction func pressed152(_ sender: Any) {
+        cellButtonAction(row: 15, col: 2)
+    }
+    @IBAction func pressed153(_ sender: Any) {
+        cellButtonAction(row: 15, col: 3)
+    }
+    @IBAction func pressed154(_ sender: Any) {
+        cellButtonAction(row: 15, col: 4)
+    }
+    @IBAction func pressed155(_ sender: Any) {
+        cellButtonAction(row: 15, col: 5)
+    }
+    @IBAction func pressed156(_ sender: Any) {
+        cellButtonAction(row: 15, col: 6)
+    }
+    @IBAction func pressed157(_ sender: Any) {
+        cellButtonAction(row: 15, col: 7)
+    }
+    @IBAction func pressed158(_ sender: Any) {
+        cellButtonAction(row: 15, col: 8)
+    }
+    @IBAction func pressed159(_ sender: Any) {
+        cellButtonAction(row: 15, col: 9)
+    }
+    @IBAction func pressed15_10(_ sender: Any) {
+        cellButtonAction(row: 15, col: 10)
+    }
     
-    
-    
-    
+
     //portrait mode only stuff-----------------------------------------
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
        get {

@@ -1686,6 +1686,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed120:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZI-Ve-wbf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R7-PB-ufa">
                                                 <rect key="frame" x="36.5" y="0.0" width="34.5" height="37"/>
@@ -1695,6 +1698,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed121:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dA-xN-0gR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-2x-mgP">
                                                 <rect key="frame" x="73" y="0.0" width="34.5" height="37"/>
@@ -1704,6 +1710,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed122:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22Q-Aj-dZB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zq8-w3-Os4">
                                                 <rect key="frame" x="109.5" y="0.0" width="34.5" height="37"/>
@@ -1713,6 +1722,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed123:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zVk-5J-D0T"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBf-hu-zHX">
                                                 <rect key="frame" x="146" y="0.0" width="34.5" height="37"/>
@@ -1722,6 +1734,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed124:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8m-PZ-K2g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j50-0F-fGD">
                                                 <rect key="frame" x="182.5" y="0.0" width="35" height="37"/>
@@ -1731,6 +1746,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed125:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QN9-yB-bZS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJN-p6-zKP">
                                                 <rect key="frame" x="219.5" y="0.0" width="34.5" height="37"/>
@@ -1740,6 +1758,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed126:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oev-Kb-TMW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT6-gP-2cO">
                                                 <rect key="frame" x="256" y="0.0" width="34.5" height="37"/>
@@ -1749,6 +1770,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed127:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bk1-Nf-TlC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-IP-Idf">
                                                 <rect key="frame" x="292.5" y="0.0" width="34.5" height="37"/>
@@ -1758,6 +1782,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed128:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZkX-p5-bJz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17w-q6-Rgl">
                                                 <rect key="frame" x="329" y="0.0" width="34.5" height="37"/>
@@ -1767,6 +1794,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed129:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Th7-Pq-YjZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BA-0b-t9H">
                                                 <rect key="frame" x="365.5" y="0.0" width="34.5" height="37"/>
@@ -1776,6 +1806,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed12_10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23x-MV-ASc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1790,6 +1823,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed130:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gf7-sp-KHu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKR-ty-VAd">
                                                 <rect key="frame" x="36.5" y="0.0" width="34.5" height="37.5"/>
@@ -1799,6 +1835,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed131:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPx-XH-8Ym"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egu-bq-nQv">
                                                 <rect key="frame" x="73" y="0.0" width="34.5" height="37.5"/>
@@ -1808,6 +1847,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed132:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DP2-AB-6lq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-b8-z4F">
                                                 <rect key="frame" x="109.5" y="0.0" width="34.5" height="37.5"/>
@@ -1817,6 +1859,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed133:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVk-wQ-GNu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIC-ll-RGN">
                                                 <rect key="frame" x="146" y="0.0" width="34.5" height="37.5"/>
@@ -1826,6 +1871,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed134:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjd-4a-Pzp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-RS-agp">
                                                 <rect key="frame" x="182.5" y="0.0" width="35" height="37.5"/>
@@ -1835,6 +1883,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed135:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyb-Yq-SwR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-eH-2Fa">
                                                 <rect key="frame" x="219.5" y="0.0" width="34.5" height="37.5"/>
@@ -1844,6 +1895,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed136:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liq-T7-3JY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-nK-IoV">
                                                 <rect key="frame" x="256" y="0.0" width="34.5" height="37.5"/>
@@ -1853,6 +1907,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed137:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iU4-wy-xxU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wew-LX-2eQ">
                                                 <rect key="frame" x="292.5" y="0.0" width="34.5" height="37.5"/>
@@ -1862,6 +1919,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed138:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iea-Eb-s5T"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovq-Pk-czf">
                                                 <rect key="frame" x="329" y="0.0" width="34.5" height="37.5"/>
@@ -1871,6 +1931,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed139:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXp-ae-v53"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3m-vk-a6U">
                                                 <rect key="frame" x="365.5" y="0.0" width="34.5" height="37.5"/>
@@ -1880,6 +1943,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed13_10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BuR-ef-70p"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1894,6 +1960,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed140:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFr-Ge-0sT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzN-9S-Ztk">
                                                 <rect key="frame" x="36.5" y="0.0" width="34.5" height="37"/>
@@ -1903,6 +1972,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed141:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKI-eY-aJi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-18-i9e">
                                                 <rect key="frame" x="73" y="0.0" width="34.5" height="37"/>
@@ -1912,6 +1984,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed142:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sey-Yc-kZ9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pI-Cd-BdX">
                                                 <rect key="frame" x="109.5" y="0.0" width="34.5" height="37"/>
@@ -1921,6 +1996,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed143:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gg4-mI-hrA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-aZ-TQC">
                                                 <rect key="frame" x="146" y="0.0" width="34.5" height="37"/>
@@ -1930,6 +2008,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed144:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgj-cH-jyU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-v5-JB5">
                                                 <rect key="frame" x="182.5" y="0.0" width="35" height="37"/>
@@ -1939,6 +2020,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed145:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MR-RN-WFq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-uq-lwy">
                                                 <rect key="frame" x="219.5" y="0.0" width="34.5" height="37"/>
@@ -1948,6 +2032,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed146:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGi-0C-Z6d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDs-WD-eqw">
                                                 <rect key="frame" x="256" y="0.0" width="34.5" height="37"/>
@@ -1957,6 +2044,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed147:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4P-rt-mP3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-4Q-yeR">
                                                 <rect key="frame" x="292.5" y="0.0" width="34.5" height="37"/>
@@ -1966,6 +2056,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed148:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ta5-K5-6YN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRt-3O-aZy">
                                                 <rect key="frame" x="329" y="0.0" width="34.5" height="37"/>
@@ -1975,6 +2068,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed149:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtn-TH-LP9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob2-Uu-BYN">
                                                 <rect key="frame" x="365.5" y="0.0" width="34.5" height="37"/>
@@ -1984,6 +2080,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed14_10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hml-1w-zs1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1998,6 +2097,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed150:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJw-Og-A7u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-yx-pH5">
                                                 <rect key="frame" x="36.5" y="0.0" width="34.5" height="37"/>
@@ -2007,6 +2109,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed151:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uA7-Da-4vo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-JX-f91">
                                                 <rect key="frame" x="73" y="0.0" width="34.5" height="37"/>
@@ -2016,6 +2121,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed152:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXo-aj-CTd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-cV-9ZR">
                                                 <rect key="frame" x="109.5" y="0.0" width="34.5" height="37"/>
@@ -2025,6 +2133,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed153:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q37-qH-dJn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srn-M2-MeV">
                                                 <rect key="frame" x="146" y="0.0" width="34.5" height="37"/>
@@ -2034,6 +2145,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed154:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVj-aP-ipA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umg-W8-VhR">
                                                 <rect key="frame" x="182.5" y="0.0" width="35" height="37"/>
@@ -2043,6 +2157,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed155:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9AE-6d-Ja6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdX-Q3-pqW">
                                                 <rect key="frame" x="219.5" y="0.0" width="34.5" height="37"/>
@@ -2052,6 +2169,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed156:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3i-nQ-6Ud"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EL-0N-NeU">
                                                 <rect key="frame" x="256" y="0.0" width="34.5" height="37"/>
@@ -2061,6 +2181,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed157:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mor-0Y-Rtg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-FS-J9V">
                                                 <rect key="frame" x="292.5" y="0.0" width="34.5" height="37"/>
@@ -2070,6 +2193,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed158:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTu-RK-bV5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0a-2G-uZB">
                                                 <rect key="frame" x="329" y="0.0" width="34.5" height="37"/>
@@ -2079,6 +2205,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed159:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bit-QZ-pC2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmQ-aK-s4E">
                                                 <rect key="frame" x="365.5" y="0.0" width="34.5" height="37"/>
@@ -2088,6 +2217,9 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressed15_10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qj8-xB-MCx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
