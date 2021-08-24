@@ -7,40 +7,47 @@
 
 import Foundation
 
-struct ButtonState{
-    var isBarrier = false
-    var isStart = false
-    var isPath = true
-    var isEnd = false
+class ButtonState{
+    var isBarrier: Bool
+    var isStart: Bool
+    var isPath: Bool
+    var isEnd: Bool
     
-    mutating func resetState(){
+    init() {
         isBarrier = false
         isStart = false
         isPath = true
         isEnd = false
     }
     
-    mutating func makeStart(){
+    func resetState(){
+        isBarrier = false
+        isStart = false
+        isPath = true
+        isEnd = false
+    }
+    
+    func makeStart(){
         makeAllFalse()
         isStart = true
     }
     
-    mutating func makeEnd(){
+    func makeEnd(){
         makeAllFalse()
         isEnd = true
     }
     
-    mutating func makePath(){
+    func makePath(){
         makeAllFalse()
         isPath = true
     }
     
-    mutating func makeBarrier(){
+    func makeBarrier(){
         makeAllFalse()
         isBarrier = true;
     }
     
-    mutating func makeAllFalse(){
+    func makeAllFalse(){
         isBarrier = false
         isStart = false
         isPath = false

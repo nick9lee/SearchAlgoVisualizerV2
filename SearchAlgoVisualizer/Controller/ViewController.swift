@@ -888,7 +888,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         Button158.backgroundColor = UIColor(named: "defaultTileColor")
         Button159.backgroundColor = UIColor(named: "defaultTileColor")
         Button15_10.backgroundColor = UIColor(named: "defaultTileColor")
+        
+        Cells.resetArray()
     }
+    
     @IBAction func runPressed(_ sender: Any) {
         if(startfound == false){
             instructionLabel.text = "Select Start First"
@@ -897,6 +900,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         } else{
             instructionLabel.text = ""
         }
+        
+        Cells.printCells()
     }
     
     func cellButtonAction(row: Int, col: Int){
@@ -1212,25 +1217,426 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             state = state6_10
             button = Button6_10
             break
+        case(7,0):                  //row 7 --------
+            state = state70
+            button = Button70
+            break
+        case(7,1):
+            state = state71
+            button = Button71
+            break
+        case(7,2):
+            state = state72
+            button = Button72
+            break
+        case(7,3):
+            state = state73
+            button = Button73
+            break
+        case(7,4):
+            state = state74
+            button = Button74
+            break
+        case(7,5):
+            state = state75
+            button = Button75
+            break
+        case(7,6):
+            state = state76
+            button = Button76
+            break
+        case(7,7):
+            state = state77
+            button = Button77
+            break
+        case(7,8):
+            state = state78
+            button = Button78
+            break
+        case(7,9):
+            state = state79
+            button = Button79
+            break
+        case(7,10):
+            state = state7_10
+            button = Button7_10
+            break
+        case(8,0):                  //row 8 --------
+            state = state80
+            button = Button80
+            break
+        case(8,1):
+            state = state81
+            button = Button81
+            break
+        case(8,2):
+            state = state82
+            button = Button82
+            break
+        case(8,3):
+            state = state83
+            button = Button83
+            break
+        case(8,4):
+            state = state84
+            button = Button84
+            break
+        case(8,5):
+            state = state85
+            button = Button85
+            break
+        case(8,6):
+            state = state86
+            button = Button86
+            break
+        case(8,7):
+            state = state87
+            button = Button87
+            break
+        case(8,8):
+            state = state88
+            button = Button88
+            break
+        case(8,9):
+            state = state89
+            button = Button89
+            break
+        case(8,10):
+            state = state8_10
+            button = Button8_10
+            break
+        case(9,0):                  //row 9 --------
+            state = state90
+            button = Button90
+            break
+        case(9,1):
+            state = state91
+            button = Button91
+            break
+        case(9,2):
+            state = state92
+            button = Button92
+            break
+        case(9,3):
+            state = state93
+            button = Button93
+            break
+        case(9,4):
+            state = state94
+            button = Button94
+            break
+        case(9,5):
+            state = state95
+            button = Button95
+            break
+        case(9,6):
+            state = state96
+            button = Button96
+            break
+        case(9,7):
+            state = state97
+            button = Button97
+            break
+        case(9,8):
+            state = state98
+            button = Button98
+            break
+        case(9,9):
+            state = state99
+            button = Button99
+            break
+        case(9,10):
+            state = state9_10
+            button = Button9_10
+            break
+        case(10,0):                  //row 10 --------
+            state = state100
+            button = Button100
+            break
+        case(10,1):
+            state = state101
+            button = Button101
+            break
+        case(10,2):
+            state = state102
+            button = Button102
+            break
+        case(10,3):
+            state = state103
+            button = Button103
+            break
+        case(10,4):
+            state = state104
+            button = Button104
+            break
+        case(10,5):
+            state = state105
+            button = Button105
+            break
+        case(10,6):
+            state = state106
+            button = Button106
+            break
+        case(10,7):
+            state = state107
+            button = Button107
+            break
+        case(10,8):
+            state = state108
+            button = Button108
+            break
+        case(10,9):
+            state = state109
+            button = Button109
+            break
+        case(10,10):
+            state = state10_10
+            button = Button10_10
+            break
+        case(11,0):                  //row 11 --------
+            state = state110
+            button = Button110
+            break
+        case(11,1):
+            state = state111
+            button = Button111
+            break
+        case(11,2):
+            state = state112
+            button = Button112
+            break
+        case(11,3):
+            state = state113
+            button = Button113
+            break
+        case(11,4):
+            state = state114
+            button = Button114
+            break
+        case(11,5):
+            state = state115
+            button = Button115
+            break
+        case(11,6):
+            state = state116
+            button = Button116
+            break
+        case(11,7):
+            state = state117
+            button = Button117
+            break
+        case(11,8):
+            state = state118
+            button = Button118
+            break
+        case(11,9):
+            state = state119
+            button = Button119
+            break
+        case(11,10):
+            state = state11_10
+            button = Button11_10
+            break
+        case(12,0):                  //row 12 --------
+            state = state120
+            button = Button120
+            break
+        case(12,1):
+            state = state121
+            button = Button121
+            break
+        case(12,2):
+            state = state122
+            button = Button122
+            break
+        case(12,3):
+            state = state123
+            button = Button123
+            break
+        case(12,4):
+            state = state124
+            button = Button124
+            break
+        case(12,5):
+            state = state125
+            button = Button125
+            break
+        case(12,6):
+            state = state126
+            button = Button126
+            break
+        case(12,7):
+            state = state127
+            button = Button127
+            break
+        case(12,8):
+            state = state128
+            button = Button128
+            break
+        case(12,9):
+            state = state129
+            button = Button129
+            break
+        case(12,10):
+            state = state12_10
+            button = Button12_10
+            break
+        case(13,0):                  //row 13 --------
+            state = state130
+            button = Button130
+            break
+        case(13,1):
+            state = state131
+            button = Button131
+            break
+        case(13,2):
+            state = state132
+            button = Button132
+            break
+        case(13,3):
+            state = state133
+            button = Button133
+            break
+        case(13,4):
+            state = state134
+            button = Button134
+            break
+        case(13,5):
+            state = state135
+            button = Button135
+            break
+        case(13,6):
+            state = state136
+            button = Button136
+            break
+        case(13,7):
+            state = state137
+            button = Button137
+            break
+        case(13,8):
+            state = state138
+            button = Button138
+            break
+        case(13,9):
+            state = state139
+            button = Button139
+            break
+        case(13,10):
+            state = state13_10
+            button = Button13_10
+            break
+        case(14,0):                  //row 14 --------
+            state = state140
+            button = Button140
+            break
+        case(14,1):
+            state = state141
+            button = Button141
+            break
+        case(14,2):
+            state = state142
+            button = Button142
+            break
+        case(14,3):
+            state = state143
+            button = Button143
+            break
+        case(14,4):
+            state = state144
+            button = Button144
+            break
+        case(14,5):
+            state = state145
+            button = Button145
+            break
+        case(14,6):
+            state = state146
+            button = Button146
+            break
+        case(14,7):
+            state = state147
+            button = Button147
+            break
+        case(14,8):
+            state = state148
+            button = Button148
+            break
+        case(14,9):
+            state = state149
+            button = Button149
+            break
+        case(14,10):
+            state = state14_10
+            button = Button14_10
+            break
+        case(15,0):                  //row 15 --------
+            state = state150
+            button = Button150
+            break
+        case(15,1):
+            state = state151
+            button = Button151
+            break
+        case(15,2):
+            state = state152
+            button = Button152
+            break
+        case(15,3):
+            state = state153
+            button = Button153
+            break
+        case(15,4):
+            state = state154
+            button = Button154
+            break
+        case(15,5):
+            state = state155
+            button = Button155
+            break
+        case(15,6):
+            state = state156
+            button = Button156
+            break
+        case(15,7):
+            state = state157
+            button = Button157
+            break
+        case(15,8):
+            state = state158
+            button = Button158
+            break
+        case(15,9):
+            state = state159
+            button = Button159
+            break
+        case(15,10):
+            state = state15_10
+            button = Button15_10
+            break
         case (_, _):
             return
         }
         
-        if(startfound == false || state01.isStart){
+        if(startfound == false || state.isStart){       // making start
             button.backgroundColor = UIColor(named: "start")
             state.makeStart()
             startfound = true;
             instructionLabel.text = "Select End"
-        } else if(endfound == false || state01.isEnd){
+            Cells.setStart(row: row, col: col)
+        } else if(endfound == false || state.isEnd){        //making end
             button.backgroundColor = UIColor(named: "finish")
             state.makeEnd()
             endfound = true;
-        } else if(state.isPath == true){
+            instructionLabel.text = "Select Barriers"
+            Cells.setEnd(row: row, col: col)
+        } else if(state.isPath == true){        //making barrier
             button.backgroundColor = UIColor(named: "barrier")
             state.makeBarrier()
-        } else if(state.isBarrier == true){
+            Cells.setBarrier(row: row, col: col)
+        } else if(state.isBarrier == true){         //making path
             button.backgroundColor = UIColor(named: "defaultTileColor")
             state.makePath()
+            Cells.setPath(row: row, col: col)
         }
         
     }
