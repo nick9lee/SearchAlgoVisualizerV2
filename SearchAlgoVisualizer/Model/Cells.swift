@@ -73,27 +73,27 @@ class Cells{
     static func setStart(row: Int, col: Int){
         startrow = row
         startcol = col
-        cellArray[row][col] = 0;
+        cellArray[row][col] = 0
     }
     
     static func setEnd(row: Int, col: Int){
         endrow = row
         endcol = col
-        cellArray[row][col] = 0;
+        cellArray[row][col] = 0
     }
     
     static func setBarrier(row: Int, col: Int){
-        cellArray[row][col] = 1;
+        cellArray[row][col] = 1
     }
     
     static func setPath(row: Int, col: Int){
-        cellArray[row][col] = 0;
+        cellArray[row][col] = 0
     }
     
     static func printCells(){
         for array in cellArray {
             for x in array {
-                print(x)
+                print(x,terminator:"")
             }
             print("\n")
         }
@@ -122,8 +122,106 @@ class Cells{
         pathCol = []
     }
     
-    static func dfs(){
+    static func dfs() -> Bool{
         
+        var visitedNodes = Set<String>()
+        var parentMap: [String: [Int]] = [:]
+        
+        var stackRow = [startrow]
+        var stackCol = [startcol]
+        
+        var row: Int
+        var col: Int
+        var key: String
+        
+        while !stackRow.isEmpty {
+            row = stackRow.removeLast()
+            col = stackCol.removeLast()
+            
+            if row == endrow && col == endcol {
+                var word: String
+                word = String(row) + " " + String(col)
+                while true {
+                    if parentMap[word] != nil && (parentMap[word]![0] != startrow || parentMap[word]![1] != startcol) {
+                        pathRow.append(parentMap[word]![0])
+                        pathCol.append(parentMap[word]![1])
+                        word = String(parentMap[word]![0]) + " " + String(parentMap[word]![1])
+                    } else {
+                        break
+                    }
+                }
+                return true
+            }
+            
+            key = String(row) + " " + String(col)
+            
+            if visitedNodes.contains(key) {
+                continue
+            }
+            
+            if row != startrow || col != startcol {
+                visitedRow.append(row)
+                visitedCol.append(col)
+            }
+            visitedNodes.insert(key)
+            
+            //check left
+            if col > 0{
+                key = String(row) + " " + String(col - 1)
+                if cellArray[row][col - 1] != 1 && !visitedNodes.contains(key){
+                    stackRow.append(row)
+                    stackCol.append(col - 1)
+                    parentMap[key] = [row, col]
+                }
+            }
+            
+            //check down
+            if row < 15 {
+                key = String(row + 1) + " " + String(col)
+                if cellArray[row + 1][col] != 1 && !visitedNodes.contains(key) {
+                    stackRow.append(row + 1)
+                    stackCol.append(col)
+                    parentMap[key] = [row, col]
+                }
+            }
+            
+            //check right
+            if col < 10 {
+                key = String(row) + " " + String(col + 1)
+                if cellArray[row][col + 1] != 1 && !visitedNodes.contains(key){
+                    stackRow.append(row)
+                    stackCol.append(col + 1)
+                    parentMap[key] = [row, col]
+                }
+            }
+            
+            //check up
+            if row > 0 {
+                key = String(row - 1) + " " + String(col)
+                if cellArray[row - 1][col] != 1 && !visitedNodes.contains(key){
+                    stackRow.append(row - 1)
+                    stackCol.append(col)
+                    parentMap[key] = [row, col]
+                }
+            }
+        }
+        return false;
+    }
+    
+    
+    static func runPressed(algoId: Int) -> Bool{
+        clearPaths()
+        var targetFound = false
+        
+        switch(algoId){
+        case(0):
+            targetFound = dfs()
+            break
+        case(_):
+            return false
+        }
+        
+        return targetFound
     }
     
 }

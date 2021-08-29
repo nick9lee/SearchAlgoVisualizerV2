@@ -901,12 +901,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             instructionLabel.text = ""
         }
         
-        Cells.printCells()
+        Cells.clearPaths()
+        let pathfound = Cells.dfs()
+        
+        if !pathfound {
+            instructionLabel.text = "Path Not Found"
+        }
+        
+        colorVisited()
+        colorPath()
     }
     
     func cellButtonAction(row: Int, col: Int){
         var state: ButtonState
         var button: UIButton
+        
+        Cells.clearPaths()
         
         switch(row, col){
         case(0,0):                  //row 0 --------
@@ -2233,6 +2243,572 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         AlgoPicker.resignFirstResponder()
     }
     //pickerView end Functions --------------------------------------
-
+    
+    
+    func colorButton(row: Int, col: Int, color: UIColor){
+        var button: UIButton
+        
+        switch(row, col){
+        case(0,0):                  //row 0 --------
+            button = Button00
+            break
+        case(0,1):
+            button = Button01
+            break
+        case(0,2):
+            button = Button02
+            break
+        case(0,3):
+            button = Button03
+            break
+        case(0,4):
+            button = Button04
+            break
+        case(0,5):
+            button = Button05
+            break
+        case(0,6):
+            button = Button06
+            break
+        case(0,7):
+            button = Button07
+            break
+        case(0,8):
+            button = Button08
+            break
+        case(0,9):
+            button = Button09
+            break
+        case(0,10):
+            button = Button0_10
+            break
+        case(1,0):                  //row 1 --------
+            button = Button10
+            break
+        case(1,1):
+            button = Button11
+            break
+        case(1,2):
+            button = Button12
+            break
+        case(1,3):
+            button = Button13
+            break
+        case(1,4):
+            button = Button14
+            break
+        case(1,5):
+            button = Button15
+            break
+        case(1,6):
+            button = Button16
+            break
+        case(1,7):
+            button = Button17
+            break
+        case(1,8):
+            button = Button18
+            break
+        case(1,9):
+            button = Button19
+            break
+        case(1,10):
+            button = Button1_10
+            break
+        case(2,0):                  //row 2 --------
+            button = Button20
+            break
+        case(2,1):
+            button = Button21
+            break
+        case(2,2):
+            button = Button22
+            break
+        case(2,3):
+            button = Button23
+            break
+        case(2,4):
+            button = Button24
+            break
+        case(2,5):
+            button = Button25
+            break
+        case(2,6):
+            button = Button26
+            break
+        case(2,7):
+            button = Button27
+            break
+        case(2,8):
+            button = Button28
+            break
+        case(2,9):
+            button = Button29
+            break
+        case(2,10):
+            button = Button2_10
+            break
+        case(3,0):                  //row 3 --------
+            button = Button30
+            break
+        case(3,1):
+            button = Button31
+            break
+        case(3,2):
+            button = Button32
+            break
+        case(3,3):
+            button = Button33
+            break
+        case(3,4):
+            button = Button34
+            break
+        case(3,5):
+            button = Button35
+            break
+        case(3,6):
+            button = Button36
+            break
+        case(3,7):
+            button = Button37
+            break
+        case(3,8):
+            button = Button38
+            break
+        case(3,9):
+            button = Button39
+            break
+        case(3,10):
+            button = Button3_10
+            break
+        case(4,0):                  //row 4 --------
+            button = Button40
+            break
+        case(4,1):
+            button = Button41
+            break
+        case(4,2):
+            button = Button42
+            break
+        case(4,3):
+            button = Button43
+            break
+        case(4,4):
+            button = Button44
+            break
+        case(4,5):
+            button = Button45
+            break
+        case(4,6):
+            button = Button46
+            break
+        case(4,7):
+            button = Button47
+            break
+        case(4,8):
+            button = Button48
+            break
+        case(4,9):
+            button = Button49
+            break
+        case(4,10):
+            button = Button4_10
+            break
+        case(5,0):                  //row 5 --------
+            button = Button50
+            break
+        case(5,1):
+            button = Button51
+            break
+        case(5,2):
+            button = Button52
+            break
+        case(5,3):
+            button = Button53
+            break
+        case(5,4):
+            button = Button54
+            break
+        case(5,5):
+            button = Button55
+            break
+        case(5,6):
+            button = Button56
+            break
+        case(5,7):
+            button = Button57
+            break
+        case(5,8):
+            button = Button58
+            break
+        case(5,9):
+            button = Button59
+            break
+        case(5,10):
+            button = Button5_10
+            break
+        case(6,0):                  //row 6 --------
+            button = Button60
+            break
+        case(6,1):
+            button = Button61
+            break
+        case(6,2):
+            button = Button62
+            break
+        case(6,3):
+            button = Button63
+            break
+        case(6,4):
+            button = Button64
+            break
+        case(6,5):
+            button = Button65
+            break
+        case(6,6):
+            button = Button66
+            break
+        case(6,7):
+            button = Button67
+            break
+        case(6,8):
+            button = Button68
+            break
+        case(6,9):
+            button = Button69
+            break
+        case(6,10):
+            button = Button6_10
+            break
+        case(7,0):                  //row 7 --------
+            button = Button70
+            break
+        case(7,1):
+            button = Button71
+            break
+        case(7,2):
+            button = Button72
+            break
+        case(7,3):
+            button = Button73
+            break
+        case(7,4):
+            button = Button74
+            break
+        case(7,5):
+            button = Button75
+            break
+        case(7,6):
+            button = Button76
+            break
+        case(7,7):
+            button = Button77
+            break
+        case(7,8):
+            button = Button78
+            break
+        case(7,9):
+            button = Button79
+            break
+        case(7,10):
+            button = Button7_10
+            break
+        case(8,0):                  //row 8 --------
+            button = Button80
+            break
+        case(8,1):
+            button = Button81
+            break
+        case(8,2):
+            button = Button82
+            break
+        case(8,3):
+            button = Button83
+            break
+        case(8,4):
+            button = Button84
+            break
+        case(8,5):
+            button = Button85
+            break
+        case(8,6):
+            button = Button86
+            break
+        case(8,7):
+            button = Button87
+            break
+        case(8,8):
+            button = Button88
+            break
+        case(8,9):
+            button = Button89
+            break
+        case(8,10):
+            button = Button8_10
+            break
+        case(9,0):                  //row 9 --------
+            button = Button90
+            break
+        case(9,1):
+            button = Button91
+            break
+        case(9,2):
+            button = Button92
+            break
+        case(9,3):
+            button = Button93
+            break
+        case(9,4):
+            button = Button94
+            break
+        case(9,5):
+            button = Button95
+            break
+        case(9,6):
+            button = Button96
+            break
+        case(9,7):
+            button = Button97
+            break
+        case(9,8):
+            button = Button98
+            break
+        case(9,9):
+            button = Button99
+            break
+        case(9,10):
+            button = Button9_10
+            break
+        case(10,0):                  //row 10 --------
+            button = Button100
+            break
+        case(10,1):
+            button = Button101
+            break
+        case(10,2):
+            button = Button102
+            break
+        case(10,3):
+            button = Button103
+            break
+        case(10,4):
+            button = Button104
+            break
+        case(10,5):
+            button = Button105
+            break
+        case(10,6):
+            button = Button106
+            break
+        case(10,7):
+            button = Button107
+            break
+        case(10,8):
+            button = Button108
+            break
+        case(10,9):
+            button = Button109
+            break
+        case(10,10):
+            button = Button10_10
+            break
+        case(11,0):                  //row 11 --------
+            button = Button110
+            break
+        case(11,1):
+            button = Button111
+            break
+        case(11,2):
+            button = Button112
+            break
+        case(11,3):
+            button = Button113
+            break
+        case(11,4):
+            button = Button114
+            break
+        case(11,5):
+            button = Button115
+            break
+        case(11,6):
+            button = Button116
+            break
+        case(11,7):
+            button = Button117
+            break
+        case(11,8):
+            button = Button118
+            break
+        case(11,9):
+            button = Button119
+            break
+        case(11,10):
+            button = Button11_10
+            break
+        case(12,0):                  //row 12 --------
+            button = Button120
+            break
+        case(12,1):
+            button = Button121
+            break
+        case(12,2):
+            button = Button122
+            break
+        case(12,3):
+            button = Button123
+            break
+        case(12,4):
+            button = Button124
+            break
+        case(12,5):
+            button = Button125
+            break
+        case(12,6):
+            button = Button126
+            break
+        case(12,7):
+            button = Button127
+            break
+        case(12,8):
+            button = Button128
+            break
+        case(12,9):
+            button = Button129
+            break
+        case(12,10):
+            button = Button12_10
+            break
+        case(13,0):                  //row 13 --------
+            button = Button130
+            break
+        case(13,1):
+            button = Button131
+            break
+        case(13,2):
+            button = Button132
+            break
+        case(13,3):
+            button = Button133
+            break
+        case(13,4):
+            button = Button134
+            break
+        case(13,5):
+            button = Button135
+            break
+        case(13,6):
+            button = Button136
+            break
+        case(13,7):
+            button = Button137
+            break
+        case(13,8):
+            button = Button138
+            break
+        case(13,9):
+            button = Button139
+            break
+        case(13,10):
+            button = Button13_10
+            break
+        case(14,0):                  //row 14 --------
+            button = Button140
+            break
+        case(14,1):
+            button = Button141
+            break
+        case(14,2):
+            button = Button142
+            break
+        case(14,3):
+            button = Button143
+            break
+        case(14,4):
+            button = Button144
+            break
+        case(14,5):
+            button = Button145
+            break
+        case(14,6):
+            button = Button146
+            break
+        case(14,7):
+            button = Button147
+            break
+        case(14,8):
+            button = Button148
+            break
+        case(14,9):
+            button = Button149
+            break
+        case(14,10):
+            button = Button14_10
+            break
+        case(15,0):                  //row 15 --------
+            button = Button150
+            break
+        case(15,1):
+            button = Button151
+            break
+        case(15,2):
+            button = Button152
+            break
+        case(15,3):
+            button = Button153
+            break
+        case(15,4):
+            button = Button154
+            break
+        case(15,5):
+            button = Button155
+            break
+        case(15,6):
+            button = Button156
+            break
+        case(15,7):
+            button = Button157
+            break
+        case(15,8):
+            button = Button158
+            break
+        case(15,9):
+            button = Button159
+            break
+        case(15,10):
+            button = Button15_10
+            break
+        case (_, _):
+            return
+        }
+        
+        button.backgroundColor = color
+        RunLoop.current.run(until: Date() + 0.05)
+    }
+    
+    func colorVisited(){
+        let rowArray = Cells.visitedRow
+        let colArray = Cells.visitedCol
+        
+        var i = 0
+        var seconds = 0.0
+        
+        for _ in rowArray {
+            colorButton(row: rowArray[i], col: colArray[i], color: UIColor(named: "visited")!)
+            i += 1
+            seconds += 0.1
+        }
+    }
+    
+    func colorPath(){
+        let rowArray = Cells.pathRow
+        let colArray = Cells.pathCol
+        
+        var i = 0
+        
+        for _ in rowArray {
+            colorButton(row: rowArray[i], col: colArray[i], color: UIColor(named: "finalPath")!)
+            i += 1
+        }
+    }
 }
 
