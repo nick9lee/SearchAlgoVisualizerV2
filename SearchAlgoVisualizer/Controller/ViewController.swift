@@ -469,6 +469,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func resetPressed(_ sender: Any) {
         startfound = false
         endfound = false
+        instructionLabel.text = "Select Start"
         
         //reseting states of all buttons ------------
         //row0
@@ -902,7 +903,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         Cells.clearPaths()
-        let pathfound = Cells.dfs()
+        let pathfound = Cells.runPressed(algoId: 1)
         
         if !pathfound {
             instructionLabel.text = "Path Not Found"
@@ -2782,7 +2783,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         button.backgroundColor = color
-        RunLoop.current.run(until: Date() + 0.05)
     }
     
     func colorVisited(){
@@ -2790,12 +2790,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let colArray = Cells.visitedCol
         
         var i = 0
-        var seconds = 0.0
         
         for _ in rowArray {
             colorButton(row: rowArray[i], col: colArray[i], color: UIColor(named: "visited")!)
+            RunLoop.current.run(until: Date() + 0.05)
             i += 1
-            seconds += 0.1
         }
     }
     
@@ -2807,6 +2806,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         for _ in rowArray {
             colorButton(row: rowArray[i], col: colArray[i], color: UIColor(named: "finalPath")!)
+            RunLoop.current.run(until: Date() + 0.05)
             i += 1
         }
     }
