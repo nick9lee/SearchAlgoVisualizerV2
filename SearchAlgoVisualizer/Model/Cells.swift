@@ -294,6 +294,12 @@ class Cells{
         return false;
     }
     
+    static func AStar() -> Bool{
+        
+        
+        return false
+    }
+    
     
     static func runPressed(algoId: Int) -> Bool{
         clearPaths()
@@ -305,10 +311,15 @@ class Cells{
             break
         case(1):
             targetFound = bfs()
+            break
+        case(2):
+            return false
+        case(3):
+            targetFound = AStar()
+            break
         case(_):
             return false
         }
-        
         return targetFound
     }
     

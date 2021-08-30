@@ -894,6 +894,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func runPressed(_ sender: Any) {
+        resetGridColors()
         if(startfound == false){
             instructionLabel.text = "Select Start First"
         } else if(endfound == false){
@@ -2808,6 +2809,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             colorButton(row: rowArray[i], col: colArray[i], color: UIColor(named: "finalPath")!)
             RunLoop.current.run(until: Date() + 0.05)
             i += 1
+        }
+    }
+    
+    func resetGridColors(){
+        var row = 0
+        var col = 0
+        
+        for i in Cells.cellArray {
+            for _ in i {
+                if Cells.cellArray[row][col] != 1 && (row != Cells.startrow || col != Cells.startcol) && (row != Cells.endrow || col != Cells.endcol) {
+                    colorButton(row: row, col: col, color: UIColor(named: "defaultTileColor")!)
+                }
+                col += 1
+            }
+            row += 1
+            col = 0
         }
     }
 }
