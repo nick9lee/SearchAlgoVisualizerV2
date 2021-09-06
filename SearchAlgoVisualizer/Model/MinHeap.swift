@@ -15,10 +15,9 @@ class MinHeap {
         heap = []
         nodePositionsInHeap = [:]
         
-        var i = 0
-        for x in array {
-            nodePositionsInHeap[x.id] = i
-            i += 1
+        for i in 0...array.count - 1 {
+            let node = array[i]
+            nodePositionsInHeap[node.id] = i
         }
 
         heap = buildHeap(arraytemp: array)
@@ -31,7 +30,7 @@ class MinHeap {
         var currentIdx = firstParentIdx + 1
         
         while currentIdx >= 0 {
-            array = siftDown(currentIdxTemp: currentIdx, endIdx: array.count - 1, array: array)
+            array = siftDown(currentIdxTemp: currentIdx, endIdx: array.count - 1, arraytemp: array)
             currentIdx -= 1
         }
         
@@ -42,18 +41,18 @@ class MinHeap {
         return heap.isEmpty
     }
     
-    public func siftDown(currentIdxTemp: Int, endIdx: Int, array: [Node]) -> [Node]{
+    public func siftDown(currentIdxTemp: Int, endIdx: Int, arraytemp: [Node]) -> [Node]{
         
+        var array = arraytemp
         var currentIdx = currentIdxTemp
         var childOneIdx = currentIdx * 2 + 1;
-        var childTwoIdx: Int
         
         while childOneIdx <= endIdx {
-            childTwoIdx = currentIdx * 2 + 2 <= endIdx ? currentIdx * 2 + 2 : -1
+            let childTwoIdx = currentIdx * 2 + 2 <= endIdx ? currentIdx * 2 + 2 : -1
             
             var idxToSwap: Int
             
-            if childTwoIdx != -1 && (array[childTwoIdx].estimatedDistanceToEnd < heap[childOneIdx].estimatedDistanceToEnd) {
+            if childTwoIdx != -1 && array[childTwoIdx].estimatedDistanceToEnd < array[childOneIdx].estimatedDistanceToEnd {
                 idxToSwap = childTwoIdx
             } else {
                 idxToSwap = childOneIdx
@@ -64,9 +63,9 @@ class MinHeap {
                 //swap(currentIdx, idxToSwap);
                 nodePositionsInHeap[heap[currentIdx].id] = idxToSwap
                 nodePositionsInHeap[heap[idxToSwap].id] = currentIdx
-                let temp = heap[currentIdx]
-                heap[currentIdx] = heap[idxToSwap]
-                heap[idxToSwap] = temp
+                let temp = array[currentIdx]
+                array[currentIdx] = array[idxToSwap]
+                array[idxToSwap] = temp
                 
                 currentIdx = idxToSwap
                 childOneIdx = currentIdx * 2 + 1
@@ -110,7 +109,7 @@ class MinHeap {
         let node = heap[heap.count - 1]
         heap.remove(at: heap.count - 1)
         nodePositionsInHeap.removeValue(forKey: node.id)
-        heap = siftDown(currentIdxTemp: 0, endIdx: heap.count - 1, array: heap)
+        heap = siftDown(currentIdxTemp: 0, endIdx: heap.count - 1, arraytemp: heap)
         
         return node
     }

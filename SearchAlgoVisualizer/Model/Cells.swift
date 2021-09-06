@@ -295,9 +295,173 @@ class Cells{
     }
     
     static func AStar() -> Bool{
+
+        let finalPath = aStarAlgorithm(startRow: startrow, startCol: startcol, endRow: endrow, endCol: endcol, graph: cellArray)
+
+        if finalPath.count == 0 {
+            return false
+        }
+
+        for x in finalPath {
+            if (x[0] != startrow || x[1] != startcol) && (x[0] != endrow || x[1] != endcol){
+                pathRow.append(x[0])
+                pathCol.append(x[1])
+            }
+        }
         
+        // testing heap
+
+//        var array: [Node] = []
+//        let node = Node(therow: 1, thecol: 1, thevalue: 0)
+//        node.estimatedDistanceToEnd = 1
+//        array.append(node)
+//        var minHeap = MinHeap(array: array)
+//
+//        let node1 = Node(therow: 1, thecol: 1, thevalue: 1)
+//        node1.estimatedDistanceToEnd = 1
+//        let node2 = Node(therow: 1, thecol: 1, thevalue: 2)
+//        node2.estimatedDistanceToEnd = 1
+//        let node3 = Node(therow: 1, thecol: 1, thevalue: 3)
+//        node3.estimatedDistanceToEnd = 4
+//        let node4 = Node(therow: 1, thecol: 1, thevalue: 4)
+//        node4.estimatedDistanceToEnd = 5
+//
+//        minHeap.insert(node: node1)
+//        minHeap.insert(node: node2)
+//        minHeap.insert(node: node3)
+//        minHeap.insert(node: node4)
+//
+//        print(minHeap.remove()!.estimatedDistanceToEnd)
+//        print(minHeap.remove()!.estimatedDistanceToEnd)
+//        print(minHeap.remove()!.estimatedDistanceToEnd)
+//        print(minHeap.remove()!.estimatedDistanceToEnd)
+//        print(minHeap.remove()!.estimatedDistanceToEnd)
         
-        return false
+        return true
+    }
+    
+    static func aStarAlgorithm(startRow: Int, startCol: Int, endRow: Int, endCol: Int, graph: [[Int]]) -> [[Int]]{
+        
+        let nodes = initializeNodes(graph: graph)
+        let startNode = nodes[startRow][startCol]
+        let endNode = nodes[endRow][endCol]
+        
+        startNode.distanceFromStart = 0
+        startNode.estimatedDistanceToEnd = calculateManhattanDistance(currentNode: startNode, endNode: endNode)
+        
+        var nodesToVisitList: [Node] = []
+        nodesToVisitList.append(startNode)
+        
+        let nodesToVisit = MinHeap(array: nodesToVisitList)
+        
+        while !nodesToVisit.isEmpty() {
+            let currentMinDistanceNode = nodesToVisit.remove()
+            
+            if (currentMinDistanceNode!.row != startrow || currentMinDistanceNode!.col != startcol) && (currentMinDistanceNode!.row != endrow || currentMinDistanceNode!.col != endcol){
+                visitedRow.append(currentMinDistanceNode!.row)
+                visitedCol.append(currentMinDistanceNode!.col)
+            }
+            
+            if currentMinDistanceNode!.row == endNode.row && currentMinDistanceNode!.col == endNode.col {
+                break
+            }
+            
+            let neighbors = getNeighboringNodes(node: currentMinDistanceNode!, nodes: nodes)
+            
+            for neighbor in neighbors {
+                if neighbor.value == 1 {
+                    continue
+                }
+                
+                let tentativeDistanceToNeighbor = currentMinDistanceNode!.distanceFromStart + 1
+                
+                if tentativeDistanceToNeighbor >= neighbor.distanceFromStart {
+                    continue
+                }
+                
+                neighbor.cameFrom = currentMinDistanceNode
+                neighbor.distanceFromStart = tentativeDistanceToNeighbor
+                neighbor.estimatedDistanceToEnd = tentativeDistanceToNeighbor + calculateManhattanDistance(currentNode: neighbor, endNode: endNode)
+                
+                if !nodesToVisit.containsNode(node: neighbor) {
+                    nodesToVisit.insert(node: neighbor)
+                } else {
+                    nodesToVisit.update(node: neighbor)
+                }
+            }
+        }
+        return reconstructPath(endNode: endNode)
+    }
+    
+    static func initializeNodes(graph: [[Int]]) -> [[Node]] {
+        var nodes: [[Node]] = []
+        
+        for i in 0...graph.count - 1 {
+            let nodeList: [Node] = []
+            nodes.append(nodeList)
+            for j in 0...graph[i].count - 1 {
+                nodes[i].append(Node(therow: i, thecol: j, thevalue: graph[i][j]))
+            }
+        }
+        
+        return nodes
+    }
+    
+    static func calculateManhattanDistance(currentNode: Node, endNode: Node) -> Int {
+        let currentRow = currentNode.row
+        let currentCol = currentNode.col
+        let endRow = endNode.row
+        let endCol = endNode.col
+        
+        return abs(currentRow - endRow) + abs(currentCol - endCol)
+    }
+    
+    static func getNeighboringNodes(node: Node, nodes: [[Node]]) -> [Node] {
+        var neighbors: [Node] = []
+        
+        let numRows = nodes.count
+        let numCols = nodes[0].count
+        
+        let row = node.row
+        let col = node.col
+        
+        if row < numRows - 1 {          //down
+            neighbors.append(nodes[row + 1][col])
+        }
+        
+        if row > 0 {    //up
+            neighbors.append(nodes[row - 1][col])
+        }
+        
+        if col < numCols - 1 {      //right
+            neighbors.append(nodes[row][col + 1])
+        }
+        
+        if col > 0 {        //left
+            neighbors.append(nodes[row][col - 1])
+        }
+        
+        return neighbors
+    }
+    
+    static func reconstructPath(endNode: Node) -> [[Int]] {
+        if endNode.cameFrom == nil {
+            return []
+        }
+        
+        var currentNode: Node?
+        currentNode = endNode
+        
+        var path: [[Int]] = []
+        
+        while currentNode != nil {
+            var nodeData: [Int] = []
+            nodeData.append(currentNode!.row)
+            nodeData.append(currentNode!.col)
+            path.append(nodeData)
+            currentNode = currentNode?.cameFrom
+        }
+        return path
     }
     
     

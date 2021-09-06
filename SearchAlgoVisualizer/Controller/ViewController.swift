@@ -904,7 +904,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         Cells.clearPaths()
-        let pathfound = Cells.runPressed(algoId: 1)
+        let pathfound = Cells.runPressed(algoId: 3)
         
         if !pathfound {
             instructionLabel.text = "Path Not Found"

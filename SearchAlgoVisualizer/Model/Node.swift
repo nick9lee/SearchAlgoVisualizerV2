@@ -21,7 +21,7 @@ class Node{
         row = therow
         col = thecol
         value = thevalue
-        id = String(row) + " " + String(col)
+        id = String(row) + "-" + String(col)
         distanceFromStart = Int.max
         estimatedDistanceToEnd = Int.max
         cameFrom = nil
