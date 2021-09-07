@@ -464,7 +464,6 @@ class Cells{
         return path
     }
     
-    
     static func runPressed(algoId: Int) -> Bool{
         clearPaths()
         var targetFound = false
@@ -477,8 +476,6 @@ class Cells{
             targetFound = bfs()
             break
         case(2):
-            return false
-        case(3):
             targetFound = AStar()
             break
         case(_):

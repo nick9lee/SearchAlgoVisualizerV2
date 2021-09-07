@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     static let numberOfCols = 11
     static let numberOfRows = 16
-    static let searchAlgos = ["Dijkstra", "BFS", "DFS", "A*"]
+    static let searchAlgos = [ "BFS", "DFS", "A*"]
     static var chosenSearchAlgo = searchAlgos[0]
     static var cells = Cells()
     
@@ -904,7 +904,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         Cells.clearPaths()
-        let pathfound = Cells.runPressed(algoId: 3)
+        
+        var pathfound: Bool
+        
+        //if [ "BFS", "DFS", "A*"]
+        
+        if ViewController.chosenSearchAlgo == "BFS" {
+            pathfound = Cells.runPressed(algoId: 1)
+        } else if ViewController.chosenSearchAlgo == "DFS" {
+            pathfound = Cells.runPressed(algoId: 0)
+        } else {
+            pathfound = Cells.runPressed(algoId: 2)
+        }
         
         if !pathfound {
             instructionLabel.text = "Path Not Found"
