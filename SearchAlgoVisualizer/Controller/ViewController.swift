@@ -894,6 +894,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func runPressed(_ sender: Any) {
+        
+        self.view.isUserInteractionEnabled = false
+        
         resetGridColors()
         if(startfound == false){
             instructionLabel.text = "Select Start First"
@@ -923,6 +926,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         colorVisited()
         colorPath()
+        
+        self.view.isUserInteractionEnabled = true
     }
     
     func cellButtonAction(row: Int, col: Int){
