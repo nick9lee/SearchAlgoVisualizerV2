@@ -895,16 +895,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func runPressed(_ sender: Any) {
         
-        self.view.isUserInteractionEnabled = false
-        
         resetGridColors()
         if(startfound == false){
             instructionLabel.text = "Select Start First"
+            return
         } else if(endfound == false){
             instructionLabel.text = "Select End First"
+            return
         } else{
             instructionLabel.text = ""
         }
+        
+        self.view.isUserInteractionEnabled = false
         
         Cells.clearPaths()
         
