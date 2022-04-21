@@ -1397,6 +1397,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="pressed9_10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzI-pc-cLo"/>
+                                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cu-Xg-h87"/>
                                                 </connections>
                                             </button>
                                         </subviews>

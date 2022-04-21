@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var startfound = false
     var endfound = false
     
+    //buttone satest start
     //button states start ------------------------------------------
     //row0
     var state00 = ButtonState()
